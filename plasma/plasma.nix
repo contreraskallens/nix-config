@@ -52,7 +52,6 @@
         apply = {
           desktop = {
             value = 1;
-            type = "force";
           };
         };
       }
@@ -67,7 +66,6 @@
         apply = {
           desktop = {
             value = 1;
-            type = "force";
           };
         };
       }
@@ -82,7 +80,6 @@
         apply = {
           desktop = {
             value = 2;
-            type = "force";
           };
         };
       }
@@ -97,7 +94,6 @@
         apply = {
           desktop = {
             value = 3;
-            type = "force";
           };
         };
       }
@@ -112,7 +108,6 @@
         apply = {
           desktop = {
             value = 3;
-            type = "force";
           };
         };
       }
@@ -127,7 +122,6 @@
         apply = {
           desktop = {
             value = 5;
-            type = "force";
           };
         };
       }
@@ -141,8 +135,8 @@
         };
         apply = {
           desktops = {
-            value = 4; # Force to show everywhere
-            apply = "initially"; # "initially" lets you move it later; "force" locks it
+            value = 4;
+            apply = "initially";
           };
         };
       }
