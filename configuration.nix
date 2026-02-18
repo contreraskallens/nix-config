@@ -16,8 +16,7 @@
   # Bootloader
   boot.loader = {
     limine.enable = true;
-    grub.enable = false;
-    systemd-boot.enable = true;
+    systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;
   };
 
