@@ -52,6 +52,7 @@
     gnome-disk-utility
     libreoffice
     spotify
+    steam
     taskwarrior3
     thunderbird
     vorta
