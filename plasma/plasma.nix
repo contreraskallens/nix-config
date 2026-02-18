@@ -186,6 +186,13 @@
       }
     ];
     shortcuts = {
+      plasmashell = {
+        "activate task manager entry 1" = "none";
+        "activate task manager entry 2" = "none";
+        "activate task manager entry 3" = "none";
+        "activate task manager entry 4" = "none";
+        "activate task manager entry 5" = "none";
+      };
       kwin = {
         "Window Close" = "Meta+Q";
         "Window Quick Tile Left" = "Meta+Left";
@@ -209,17 +216,10 @@
         "Switch Window Right" = "Meta+L";
         "Switch Window Up" = "Meta+K";
       };
-      plasmashell = {
-        "activate task manager entry 1" = "none";
-        "activate task manager entry 2" = "none";
-        "activate task manager entry 3" = "none";
-        "activate task manager entry 4" = "none";
-        "activate task manager entry 5" = "none";
+      defaultApplications = {
+        "browser" = "zen-beta";
+        "terminal" = "kitty";
       };
-    };
-    defaultApplications = {
-      "browser" = "zen.beta";
-      "terminal" = "kitty";
     };
     hotkeys.commands = {
       "launch-kitty" = {
