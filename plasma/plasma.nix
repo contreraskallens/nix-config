@@ -80,8 +80,8 @@
           };
         };
         apply = {
-          desktop = {
-            value = "Dev";
+          desktops = {
+            value = "Desktop_2";
             apply = "initially";
           };
         };
@@ -95,8 +95,8 @@
           };
         };
         apply = {
-          desktop = {
-            value = 3;
+          desktops = {
+            value = "Desktop_3";
             apply = "initially";
           };
         };
@@ -110,8 +110,8 @@
           };
         };
         apply = {
-          desktop = {
-            value = 3;
+          desktops = {
+            value = "Desktop_3";
             apply = "initially";
           };
         };
@@ -125,8 +125,8 @@
           };
         };
         apply = {
-          desktop = {
-            value = 5;
+          desktops = {
+            value = "Desktop_5";
             apply = "initially";
           };
         };
@@ -140,8 +140,8 @@
           };
         };
         apply = {
-          desktop = {
-            value = 4;
+          desktops = {
+            value = "Desktop_4";
             apply = "initially";
           };
         };
