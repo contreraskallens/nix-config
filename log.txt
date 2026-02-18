@@ -1,0 +1,1392 @@
+warning: Git tree '/home/omfgzell/nix-config' is dirty
+building the system configuration...
+warning: Git tree '/home/omfgzell/nix-config' is dirty
+these 9 derivations will be built:
+  /nix/store/c4jzhq5nrprg6m5705scmvdhw8hrqiyv-niri-25.08.drv
+  /nix/store/5jc08p5spr7vlsmh0ksylacpay19wqk6-config.kdl.drv
+  /nix/store/422bc45190w6ll5zsgm4s3q2wd98fnby-home-manager-files.drv
+  /nix/store/vxbis21hasxag92p8iii22wwhr0yrl22-home-manager-generation.drv
+  /nix/store/5nmj6jn6drhkr4askf963m1gkdng4g3b-unit-home-manager-omfgzell.service.drv
+  /nix/store/8g2kfcnyry6634ay5j50zb2kd8vpyw68-system-units.drv
+  /nix/store/xnc4wmk543fbrmgqaqdimc69f2yyjw76-etc.drv
+  /nix/store/cgaw6piqwjf7325j7y4klgnxq4kllv12-activate.drv
+  /nix/store/amsz0g69wrxpsp6w1h235ll6197l9lbr-nixos-system-nixos-26.05.20260213.a82ccc3.drv
+building '/nix/store/c4jzhq5nrprg6m5705scmvdhw8hrqiyv-niri-25.08.drv'...
+niri> Running phase: unpackPhase
+niri> unpacking source archive /nix/store/f8n18bv81ipfr1hyhlxwjkcz8znk59b1-source
+niri> source root is source
+niri> Executing cargoSetupPostUnpackHook
+niri> Finished cargoSetupPostUnpackHook
+niri> Running phase: patchPhase
+niri> patching script interpreter paths in resources/niri-session
+niri> resources/niri-session: interpreter directive changed from "#!/bin/sh" to "/nix/store/f15k3dpilmiyv6zgpib289rnjykgr1r4-bash-5.3p9/bin/sh"
+niri> Executing cargoSetupPostPatchHook
+niri> Validating consistency between /build/source/Cargo.lock and /build/cargo-vendor-dir/Cargo.lock
+niri> Finished cargoSetupPostPatchHook
+niri> Running phase: updateAutotoolsGnuConfigScriptsPhase
+niri> Running phase: configurePhase
+niri> Running phase: buildPhase
+niri> Executing cargoBuildHook
+niri> cargoBuildHook flags: -j 16 --target x86_64-unknown-linux-gnu --offline --profile release --no-default-features --features=dbus\,xdp-gnome-screencast\,systemd
+niri>    Compiling proc-macro2 v1.0.101
+niri>    Compiling unicode-ident v1.0.18
+niri>    Compiling serde v1.0.219
+niri>    Compiling libc v0.2.175
+niri>    Compiling pkg-config v0.3.32
+niri>    Compiling winnow v0.7.13
+niri>    Compiling equivalent v1.0.2
+niri>    Compiling hashbrown v0.15.5
+niri>    Compiling cfg-if v1.0.3
+niri>    Compiling bitflags v2.9.3
+niri>    Compiling heck v0.5.0
+niri>    Compiling target-lexicon v0.13.2
+niri>    Compiling once_cell v1.21.3
+niri>    Compiling smallvec v1.15.1
+niri>    Compiling version-compare v0.2.0
+niri>    Compiling autocfg v1.5.0
+niri>    Compiling memchr v2.7.5
+niri>    Compiling pin-project-lite v0.2.16
+niri>    Compiling shlex v1.3.0
+niri>    Compiling log v0.4.27
+niri>    Compiling cc v1.2.34
+niri>    Compiling rustix v1.0.8
+niri>    Compiling linux-raw-sys v0.9.4
+niri>    Compiling slab v0.4.11
+niri>    Compiling futures-io v0.3.31
+niri>    Compiling futures-core v0.3.31
+niri>    Compiling version_check v0.9.5
+niri>    Compiling libloading v0.8.8
+niri>    Compiling crossbeam-utils v0.8.21
+niri>    Compiling memoffset v0.9.1
+niri>    Compiling dlib v0.5.2
+niri>    Compiling indexmap v2.11.0
+niri>    Compiling wayland-sys v0.31.7
+niri>    Compiling cfg_aliases v0.2.1
+niri>    Compiling parking v2.2.1
+niri>    Compiling fastrand v2.3.0
+niri>    Compiling downcast-rs v1.2.1
+niri>    Compiling scoped-tls v1.0.1
+niri>    Compiling nix v0.30.1
+niri>    Compiling quick-xml v0.37.5
+niri>    Compiling cfg-expr v0.18.0
+niri>    Compiling tracing-core v0.1.34
+niri>    Compiling quote v1.0.40
+niri>    Compiling glob v0.3.3
+niri>    Compiling endi v1.1.0
+niri>    Compiling syn v2.0.106
+niri>    Compiling concurrent-queue v2.5.0
+niri>    Compiling thiserror v1.0.69
+niri>    Compiling getrandom v0.3.3
+niri>    Compiling futures-sink v0.3.31
+niri>    Compiling async-task v4.7.1
+niri>    Compiling clang-sys v1.8.1
+niri>    Compiling event-listener v5.4.1
+niri>    Compiling rustix v0.38.44
+niri>    Compiling futures-channel v0.3.31
+niri>    Compiling event-listener-strategy v0.5.4
+niri>    Compiling futures-lite v2.6.1
+niri>    Compiling wayland-scanner v0.31.7
+niri>    Compiling wayland-client v0.31.11
+niri>    Compiling static_assertions v1.1.0
+niri>    Compiling zerocopy v0.8.26
+niri>    Compiling minimal-lexical v0.2.1
+niri>    Compiling futures-task v0.3.31
+niri>    Compiling regex-syntax v0.8.6
+niri>    Compiling stable_deref_trait v1.2.0
+niri>    Compiling linux-raw-sys v0.4.15
+niri>    Compiling pin-utils v0.1.0
+niri>    Compiling nom v7.1.3
+niri>    Compiling unicode-width v0.2.1
+niri>    Compiling wayland-backend v0.3.11
+niri>    Compiling either v1.15.0
+niri>    Compiling anstyle v1.0.11
+niri>    Compiling bindgen v0.72.0
+niri>    Compiling annotate-snippets v0.11.5
+niri>    Compiling itertools v0.13.0
+niri>    Compiling async-lock v3.4.1
+niri>    Compiling rustc-hash v2.1.1
+niri>    Compiling signal-hook-registry v1.4.6
+niri>    Compiling regex-automata v0.4.10
+niri>    Compiling async-channel v2.5.0
+niri>    Compiling libm v0.2.15
+niri>    Compiling atomic-waker v1.1.2
+niri>    Compiling typenum v1.18.0
+niri>    Compiling cexpr v0.6.0
+niri>    Compiling piper v0.2.4
+niri>    Compiling ahash v0.8.12
+niri>    Compiling generic-array v0.14.7
+niri>    Compiling num-traits v0.2.19
+niri>    Compiling writeable v0.5.5
+niri>    Compiling litemap v0.7.4
+niri>    Compiling utf8parse v0.2.2
+niri>    Compiling icu_locid_transform_data v1.5.1
+niri>    Compiling drm-sys v0.8.0
+niri>    Compiling drm-fourcc v2.2.0
+niri>    Compiling anstyle-parse v0.2.7
+niri>    Compiling blocking v1.6.2
+niri>    Compiling async-executor v1.13.2
+niri>    Compiling async-broadcast v0.7.2
+niri>    Compiling ordered-stream v0.2.0
+niri>    Compiling semver v1.0.26
+niri>    Compiling is_terminal_polyfill v1.70.1
+niri>    Compiling hex v0.4.3
+niri>    Compiling khronos_api v3.1.0
+niri>    Compiling icu_properties_data v1.5.1
+niri>    Compiling colorchoice v1.0.4
+niri>    Compiling thiserror v2.0.16
+niri>    Compiling foldhash v0.1.5
+niri>    Compiling linux-raw-sys v0.6.5
+niri>    Compiling anstyle-query v1.1.4
+niri>    Compiling anstream v0.6.20
+niri>    Compiling regex v1.11.2
+niri>    Compiling synstructure v0.13.2
+niri>    Compiling is-terminal v0.4.16
+niri>    Compiling proc-macro-error-attr v1.0.4
+niri>    Compiling libudev-sys v0.1.4
+niri>    Compiling io-lifetimes v1.0.11
+niri>    Compiling siphasher v1.0.1
+niri>    Compiling xkeysym v0.2.1
+niri>    Compiling rand_core v0.6.4
+niri>    Compiling icu_normalizer_data v1.5.1
+niri>    Compiling strsim v0.11.1
+niri>    Compiling clap_lex v0.7.5
+niri>    Compiling syn v1.0.109
+niri>    Compiling rand v0.8.5
+niri>    Compiling phf_shared v0.11.3
+niri>    Compiling clap_builder v4.5.46
+niri>    Compiling polling v3.10.0
+niri>    Compiling memmap2 v0.9.8
+niri>    Compiling proc-macro-error v1.0.4
+niri>    Compiling x11-dl v2.21.0
+niri>    Compiling async-io v2.5.0
+niri>    Compiling libseat-sys v0.1.9
+niri>    Compiling xml-rs v0.8.27
+niri>    Compiling smithay-client-toolkit v0.19.2
+niri>    Compiling input-sys v1.18.0
+niri>    Compiling percent-encoding v2.3.2
+niri>    Compiling xcursor v0.3.10
+niri>    Compiling cursor-icon v1.2.0
+niri>    Compiling pixman-sys v0.1.0
+niri>    Compiling gbm-sys v0.4.0
+niri>    Compiling paste v1.0.15
+niri>    Compiling async-signal v0.2.12
+niri>    Compiling phf_generator v0.11.3
+niri>    Compiling gl_generator v0.14.0
+niri>    Compiling async-process v2.4.0
+niri>    Compiling crypto-common v0.1.6
+niri>    Compiling block-buffer v0.10.4
+niri>    Compiling ppv-lite86 v0.2.21
+niri>    Compiling wayland-server v0.31.10
+niri>    Compiling wayland-csd-frame v0.3.0
+niri>    Compiling serde_derive v1.0.219
+niri>    Compiling enumflags2_derive v0.7.12
+niri>    Compiling tracing-attributes v0.1.30
+niri>    Compiling zerofrom-derive v0.1.6
+niri>    Compiling yoke-derive v0.7.5
+niri>    Compiling thiserror-impl v1.0.69
+niri>    Compiling futures-macro v0.3.31
+niri>    Compiling zerovec-derive v0.10.3
+niri>    Compiling displaydoc v0.2.5
+niri>    Compiling bytemuck_derive v1.10.1
+niri>    Compiling futures-util v0.3.31
+niri>    Compiling wayland-protocols v0.32.9
+niri>    Compiling tracing v0.1.41
+niri>    Compiling zerofrom v0.1.5
+niri>    Compiling yoke v0.7.5
+niri>    Compiling icu_provider_macros v1.5.0
+niri>    Compiling async-trait v0.1.89
+niri>    Compiling serde_repr v0.1.20
+niri>    Compiling zerovec v0.10.4
+niri>    Compiling thiserror-impl v2.0.16
+niri>    Compiling calloop v0.13.0
+niri>    Compiling drm-ffi v0.9.0
+niri>    Compiling clap_derive v4.5.45
+niri>    Compiling bytemuck v1.23.2
+niri>    Compiling wayland-cursor v0.31.11
+niri>    Compiling drm v0.14.1
+niri>    Compiling calloop-wayland-source v0.3.0
+niri>    Compiling rand_core v0.9.3
+niri>    Compiling tracy-client-sys v0.26.1
+niri>    Compiling aho-corasick v1.1.3
+niri>    Compiling winit v0.30.12
+niri>    Compiling tinystr v0.7.6
+niri>    Compiling icu_collections v1.5.0
+niri>    Compiling icu_locid v1.5.0
+niri>    Compiling gio v0.20.12
+niri>    Compiling unicode-width v0.1.14
+niri>    Compiling simd-adler32 v0.3.7
+niri>    Compiling utf8_iter v1.0.4
+niri>    Compiling x11rb-protocol v0.13.1
+niri>    Compiling is_ci v1.2.0
+niri>    Compiling write16 v1.0.0
+niri>    Compiling smawk v0.3.2
+niri>    Compiling utf16_iter v1.0.5
+niri>    Compiling icu_provider v1.5.0
+niri>    Compiling libseat v0.2.3
+niri>    Compiling unicode-segmentation v1.12.0
+niri>    Compiling futures-executor v0.3.31
+niri>    Compiling icu_locid_transform v1.5.0
+niri>    Compiling crc32fast v1.5.0
+niri>    Compiling as-raw-xcb-connection v1.0.1
+niri>    Compiling unicode-linebreak v0.1.5
+niri>    Compiling cgmath v0.18.0
+niri>    Compiling serde_json v1.0.143
+niri>    Compiling clap v4.5.46
+niri>    Compiling allocator-api2 v0.2.21
+niri>    Compiling futures v0.3.31
+niri>    Compiling textwrap v0.15.2
+niri>    Compiling heck v0.4.1
+niri>    Compiling supports-color v2.1.0
+niri>    Compiling rand_chacha v0.9.0
+niri>    Compiling hashbrown v0.14.5
+niri>    Compiling smithay v0.7.0 (https://github.com/Smithay/smithay.git#20d2dacd)
+niri>    Compiling phf_macros v0.11.3
+niri>    Compiling icu_properties v1.5.1
+niri>    Compiling profiling-procmacros v1.0.17
+niri>    Compiling miette-derive v5.10.0
+niri>    Compiling digest v0.10.7
+niri>    Compiling udev v0.9.3
+niri>    Compiling xkbcommon-dl v0.4.2
+niri>    Compiling approx v0.4.0
+niri>    Compiling supports-unicode v2.1.0
+niri>    Compiling toml_datetime v0.6.11
+niri>    Compiling serde_spanned v0.6.9
+niri>    Compiling zvariant_utils v3.2.1
+niri>    Compiling enumflags2 v0.7.12
+niri>    Compiling quick-xml v0.36.2
+niri>    Compiling supports-hyperlinks v2.1.0
+niri>    Compiling terminal_size v0.1.17
+niri>    Compiling toml_edit v0.22.27
+niri>    Compiling errno v0.3.13
+niri>    Compiling itoa v1.0.15
+niri>    Compiling smol_str v0.2.2
+niri>    Compiling owo-colors v3.5.0
+niri>    Compiling cpufeatures v0.2.17
+niri>    Compiling dpi v0.1.2
+niri>    Compiling ryu v1.0.20
+niri>    Compiling regex-syntax v0.6.29
+niri>    Compiling raw-window-handle v0.6.2
+niri>    Compiling anyhow v1.0.99
+niri>    Compiling accesskit v0.21.0
+niri>    Compiling adler2 v2.0.1
+niri>    Compiling miniz_oxide v0.8.9
+niri>    Compiling miette v5.10.0
+niri>    Compiling accesskit_consumer v0.30.0
+niri>    Compiling convert_case v0.8.0
+niri>    Compiling icu_normalizer v1.5.0
+niri>    Compiling toml v0.8.23
+niri>    Compiling proc-macro-crate v3.3.0
+niri>    Compiling idna_adapter v1.2.0
+niri>    Compiling sha2 v0.10.9
+niri>    Compiling system-deps v7.0.5
+niri>    Compiling regex-automata v0.1.10
+niri>    Compiling pixman v0.2.1
+niri>    Compiling phf v0.11.3
+niri>    Compiling input v0.9.1
+niri>    Compiling gbm v0.18.0
+niri>    Compiling profiling v1.0.17
+niri>    Compiling chumsky v0.9.3
+niri>    Compiling knuffel-derive v3.2.0
+niri>    Compiling rand v0.9.2
+niri>    Compiling cookie-factory v0.3.3
+niri>    Compiling calloop v0.14.3
+niri>    Compiling zvariant_derive v5.7.0
+niri>    Compiling glib-sys v0.20.10
+niri>    Compiling gobject-sys v0.20.10
+niri>    Compiling gio-sys v0.20.10
+niri>    Compiling libspa-sys v0.8.0 (https://gitlab.freedesktop.org/pipewire/pipewire-rs.git#93138d01)
+niri>    Compiling cairo-sys-rs v0.20.10
+niri>    Compiling glib-macros v0.20.12
+niri>    Compiling pango-sys v0.20.10
+niri>    Compiling libdisplay-info-sys v0.2.2
+niri>    Compiling pipewire-sys v0.8.0 (https://gitlab.freedesktop.org/pipewire/pipewire-rs.git#93138d01)
+niri>    Compiling pangocairo-sys v0.20.10
+niri>    Compiling zvariant v5.7.0
+niri>    Compiling libspa v0.8.0 (https://gitlab.freedesktop.org/pipewire/pipewire-rs.git#93138d01)
+niri>    Compiling libdisplay-info-derive v0.1.0
+niri>    Compiling wayland-egl v0.32.8
+niri>    Compiling xkbcommon v0.9.0
+niri>    Compiling tempfile v3.21.0
+niri>    Compiling nom v8.0.0
+niri>    Compiling aliasable v0.1.3
+niri>    Compiling atomic_float v1.1.0
+niri>    Compiling appendlist v1.4.0
+niri>    Compiling lazy_static v1.5.0
+niri>    Compiling option-ext v0.2.0
+niri>    Compiling portable-atomic v1.11.1
+niri>    Compiling overload v0.1.1
+niri>    Compiling base64 v0.21.7
+niri>    Compiling nu-ansi-term v0.46.0
+niri>    Compiling libdisplay-info v0.2.2
+niri>    Compiling knuffel v3.2.0
+niri>    Compiling sharded-slab v0.1.7
+niri>    Compiling dirs-sys v0.5.0
+niri>    Compiling flate2 v1.1.2
+niri>    Compiling tracy-client v0.18.2
+niri>    Compiling wayland-protocols-wlr v0.3.9
+niri>    Compiling wayland-protocols-plasma v0.3.9
+niri>    Compiling wayland-protocols-misc v0.3.9
+niri>    Compiling matchers v0.1.0
+niri>    Compiling niri-ipc v25.8.0 (/build/source/niri-ipc)
+niri>    Compiling csscolorparser v0.7.2
+niri>    Compiling idna v1.1.0
+niri>    Compiling zbus_names v4.2.0
+niri>    Compiling clap_complete v4.5.57
+niri>    Compiling zbus_xml v5.0.2
+niri>    Compiling zbus_macros v5.10.0
+niri>    Compiling zbus-lockstep v0.5.1
+niri>    Compiling fdeflate v0.3.7
+niri>    Compiling git-version-macro v0.3.9
+niri>    Compiling form_urlencoded v1.2.2
+niri>    Compiling tracing-log v0.2.0
+niri>    Compiling zbus-lockstep-macros v0.5.1
+niri>    Compiling thread_local v1.1.9
+niri>    Compiling bitflags v1.3.2
+niri>    Compiling tracing-subscriber v0.3.19
+niri>    Compiling png v0.17.16
+niri>    Compiling glib v0.20.12
+niri>    Compiling url v2.5.7
+niri>    Compiling git-version v0.3.9
+niri>    Compiling clap_complete_nushell v4.5.8
+niri>    Compiling smithay-drm-extras v0.1.0 (https://github.com/Smithay/smithay.git#20d2dacd)
+niri>    Compiling directories v6.0.0
+niri>    Compiling atomic v0.6.1
+niri>    Compiling ordered-float v5.0.0
+niri>    Compiling keyframe v1.1.1
+niri>    Compiling x11rb v0.13.1
+niri>    Compiling sd-notify v0.4.5
+niri>    Compiling arrayvec v0.7.6
+niri>    Compiling glam v0.30.5
+niri>    Compiling zbus v5.10.0
+niri>    Compiling pipewire v0.8.0 (https://gitlab.freedesktop.org/pipewire/pipewire-rs.git#93138d01)
+niri>    Compiling cairo-rs v0.20.12
+niri>    Compiling atspi-common v0.9.0
+niri>    Compiling atspi-proxies v0.9.0
+niri>    Compiling accesskit_atspi_common v0.14.0
+niri>    Compiling atspi-connection v0.9.0
+niri>    Compiling atspi v0.25.0
+niri>    Compiling accesskit_unix v0.17.0
+niri>    Compiling pango v0.20.12
+niri>    Compiling pangocairo v0.20.10
+niri>    Compiling niri-config v25.8.0 (/build/source/niri-config)
+niri>    Compiling niri v25.8.0 (/build/source)
+niri>     Finished `release` profile [optimized + debuginfo] target(s) in 2m 21s
+niri> Executing cargoInstallPostBuildHook
+niri> Finished cargoInstallPostBuildHook
+niri> Finished cargoBuildHook
+niri> buildPhase completed in 2 minutes 22 seconds
+niri> Running phase: checkPhase
+niri> Executing cargoCheckHook
+niri> cargoCheckHook flags: -j 16 --profile release --no-default-features --features=dbus\,xdp-gnome-screencast\,systemd --target x86_64-unknown-linux-gnu --offline -- --skip=::egl
+niri>    Compiling crossbeam-utils v0.8.21
+niri>    Compiling rayon-core v1.13.0
+niri>    Compiling wait-timeout v0.2.1
+niri>    Compiling quick-error v1.2.3
+niri>    Compiling bit-vec v0.8.0
+niri>    Compiling fnv v1.0.7
+niri>    Compiling rand_xorshift v0.4.0
+niri>    Compiling console v0.15.11
+niri>    Compiling unarray v0.1.4
+niri>    Compiling xshell-macros v0.2.7
+niri>    Compiling similar v2.7.0
+niri>    Compiling either v1.15.0
+niri>    Compiling calloop-wayland-source v0.4.0
+niri>    Compiling approx v0.5.1
+niri>    Compiling proptest-derive v0.6.0
+niri>    Compiling rusty-fork v0.3.0
+niri>    Compiling bit-set v0.8.0
+niri>    Compiling proptest v1.7.0
+niri>    Compiling xshell v0.2.7
+niri>    Compiling insta v1.43.1
+niri>    Compiling concurrent-queue v2.5.0
+niri>    Compiling crossbeam-epoch v0.9.18
+niri>    Compiling event-listener v5.4.1
+niri>    Compiling async-executor v1.13.2
+niri>    Compiling crossbeam-deque v0.8.6
+niri>    Compiling event-listener-strategy v0.5.4
+niri>    Compiling async-lock v3.4.1
+niri>    Compiling async-channel v2.5.0
+niri>    Compiling async-broadcast v0.7.2
+niri>    Compiling blocking v1.6.2
+niri>    Compiling rayon v1.11.0
+niri>    Compiling async-io v2.5.0
+niri>    Compiling async-signal v0.2.12
+niri>    Compiling async-process v2.4.0
+niri>    Compiling zbus v5.10.0
+niri>    Compiling atspi-common v0.9.0
+niri>    Compiling atspi-proxies v0.9.0
+niri>    Compiling accesskit_atspi_common v0.14.0
+niri>    Compiling atspi-connection v0.9.0
+niri>    Compiling atspi v0.25.0
+niri>    Compiling accesskit_unix v0.17.0
+niri>    Compiling niri v25.8.0 (/build/source)
+niri>     Finished `release` profile [optimized + debuginfo] target(s) in 1m 32s
+niri>      Running unittests src/lib.rs (target/x86_64-unknown-linux-gnu/release/deps/niri-71737be40d1528ec)
+niri> 
+niri> running 150 tests
+niri> test animation::clock::tests::frozen_clock ... ok
+niri> test animation::spring::tests::overdamped_spring_equal_from_to_nan ... ok
+niri> test animation::clock::tests::rate_change ... ok
+niri> test animation::spring::tests::overdamped_spring_duration_panic ... ok
+niri> test input::tests::comp_mod_handling ... ok
+niri> test layout::scrolling::tests::large_fractional_strut ... ok
+niri> test layout::scrolling::tests::working_area_starts_at_physical_pixel ... ok
+niri> test layout::tests::add_and_remove_output ... ok
+niri> test layout::tests::close_window_empty_ws_above_first ... ok
+niri> test dbus::mutter_display_config::tests::test_format_diagonal ... ok
+niri> test layout::tests::animations::clientside_height_change_doesnt_animate ... ok
+niri> test ipc::client::tests::test_fmt_rounded ... ok
+niri> test layout::tests::animations::height_resize_before_another_y_anim_then_back ... ok
+niri> test layout::tests::animations::clientside_height_change_during_another_y_anim ... ok
+niri> test layout::tests::animations::height_resize_cancel_with_stationary_second_window ... ok
+niri> test layout::tests::animations::width_resize_and_cancel_of_column_to_the_left ... ok
+niri> test layout::tests::animations::height_resize_animates_next_y ... ok
+niri> test layout::tests::animations::height_resize_before_another_y_anim_then_cancel ... ok
+niri> test layout::tests::animations::height_resize_and_cancel ... ok
+niri> test layout::tests::animations::height_resize_and_cancel_during_another_y_anim ... ok
+niri> test layout::tests::animations::width_resize_and_cancel ... ok
+niri> test layout::tests::animations::height_resize_and_back_during_another_y_anim ... ok
+niri> test layout::tests::animations::height_resize_and_back ... ok
+niri> test layout::tests::fixed_height_takes_max_non_auto_into_account ... ok
+niri> test layout::tests::fullscreen_to_windowed_fullscreen ... ok
+niri> test layout::tests::interactive_move_drop_on_other_output_during_animation ... ok
+niri> test layout::tests::fullscreen ... ok
+niri> test layout::tests::interactive_move_onto_empty_output ... ok
+niri> test layout::tests::empty_workspaces_dont_move_back_to_original_output ... ok
+niri> test layout::tests::large_max_size ... ok
+niri> test layout::tests::disable_tabbed_mode_in_fullscreen ... ok
+niri> test layout::tests::large_negative_height_change ... ok
+niri> test layout::tests::interactive_resize_on_pending_unfullscreen_column ... ok
+niri> test layout::tests::interactive_resize_to_negative ... ok
+niri> test layout::tests::interactive_move_onto_last_workspace ... ok
+niri> test layout::tests::interactive_move_unfullscreen_to_floating_stops_dnd_scroll ... ok
+niri> test layout::tests::interactive_move_onto_empty_output_ewaf ... ok
+niri> test layout::tests::move_column_to_workspace_down_focus_false_on_floating_window ... ok
+niri> test layout::tests::interactive_move_onto_first_empty_workspace ... ok
+niri> test layout::tests::move_column_to_workspace_focus_false_on_floating_window ... ok
+niri> test layout::tests::move_window_to_different_output ... ok
+niri> test layout::tests::move_column_to_workspace_unfocused_with_multiple_monitors ... ok
+niri> test layout::tests::move_pending_unfullscreen_window_out_of_active_column ... ok
+niri> test layout::tests::move_window_to_empty_workspace_above_first ... ok
+niri> test layout::tests::named_workspace_to_output_ewaf ... ok
+niri> test layout::tests::move_workspace_to_output ... ok
+niri> test layout::tests::named_workspace_to_output ... ok
+niri> test layout::tests::move_unfocused_pending_unfullscreen_window_out_of_active_column ... ok
+niri> test layout::tests::move_to_workspace_by_idx_does_not_leave_empty_workspaces ... ok
+niri> test layout::tests::move_workspace_to_same_monitor_doesnt_reorder ... ok
+niri> test layout::tests::operations_from_starting_state_dont_panic ... ok
+niri> test layout::tests::open_right_of_on_different_workspace ... ok
+niri> test layout::tests::preset_column_width_fixed_correct_with_border ... ok
+niri> test layout::tests::move_window_to_workspace_with_different_active_output ... ok
+niri> test layout::tests::output_active_workspace_is_preserved ... ok
+niri> test layout::tests::named_workspaces_dont_update_original_output_on_adding_window ... ok
+niri> test layout::tests::output_active_workspace_is_preserved_with_other_outputs ... ok
+niri> test layout::tests::one_window_in_column_becomes_weight_1 ... ok
+niri> test layout::tests::removing_all_outputs_preserves_empty_named_workspaces ... ok
+niri> test layout::tests::preset_column_width_reset_after_set_width ... ok
+niri> test layout::tests::random_operations_dont_panic ... ok
+niri> test layout::tests::open_right_of_on_different_workspace_ewaf ... ok
+niri> test layout::tests::one_window_in_column_becomes_weight_1_after_fullscreen ... ok
+niri> test layout::tests::set_first_workspace_name_ewaf ... ok
+niri> test layout::tests::removing_output_must_keep_empty_focus_on_primary ... ok
+niri> test layout::tests::primary_active_workspace_idx_not_updated_on_output_add ... ok
+niri> test layout::tests::set_first_workspace_name ... ok
+niri> test layout::tests::set_height_fixed_negative ... ok
+niri> test layout::tests::set_width_fixed_negative ... ok
+niri> test layout::tests::set_last_workspace_name ... ok
+niri> test layout::tests::removing_window_above_preserves_focused_window ... ok
+niri> test layout::tests::stacking_add_parent_brings_up_child ... ok
+niri> test layout::tests::stacking_set_parent_brings_up_child ... ok
+niri> test layout::tests::stacking_add_parent_brings_up_descendants ... ok
+niri> test layout::tests::set_window_height_recomputes_to_auto ... ok
+niri> test layout::tests::switch_ewaf_off ... ok
+niri> test layout::tests::start_interactive_move_then_remove_window ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_during_gesture ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_during_dnd_gesture ... ok
+niri> test layout::tests::stacking_activate_brings_up_descendants ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_on_consume ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_on_quick_double_toggle ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_during_ongoing_gesture ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_on_gesture ... ok
+niri> test layout::tests::unfullscreen_window_in_column ... ok
+niri> test layout::tests::switch_ewaf_on ... ok
+niri> test layout::tests::unfullscreen_with_large_border ... ok
+niri> test layout::tests::unfullscreen_view_offset_not_reset_on_removal ... ok
+niri> test layout::tests::unfullscreen_view_offset_set_on_fullscreening_inactive_tile_in_column ... ok
+niri> test layout::tests::window_closed_on_previous_workspace ... ok
+niri> test layout::tests::windowed_fullscreen_to_fullscreen ... ok
+niri> test layout::tests::windows_on_other_workspaces_remain_activated ... ok
+niri> test layout::tests::workspace_cleanup_during_switch ... ok
+niri> test layout::tests::workspace_transfer_during_switch_from_last ... ok
+niri> test layout::tests::workspaces_update_original_output_on_moving_to_same_output ... ok
+niri> test layout::tests::workspace_transfer_during_switch_gets_cleaned_up ... ok
+niri> test layout::tests::workspaces_update_original_output_on_moving_to_same_monitor ... ok
+niri> test layout::tests::workspace_transfer_during_switch ... ok
+niri> Fontconfig error: Cannot load default config file: No such file: (null)
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> 
+niri> Fontconfig error: No writable cache directories
+niri>   /var/cache/fontconfig
+niri>   /homeless-shelter/.cache/fontconfig
+niri> test input::tests::bindings_suppress_keys ... ok
+niri> test tests::floating::floating_respects_non_fixed_min_max_rule ... ok
+niri> test layout::tests::config_change_updates_cached_sizes ... ok
+niri> test layout::tests::preset_height_change_removes_preset ... ok
+niri> test tests::floating::interactive_move_unfullscreen_to_floating_restores_size ... ok
+niri> test tests::floating::moving_across_workspaces_doesnt_cancel_resize ... ok
+niri> test tests::floating::resize_in_steps ... ok
+niri> test tests::floating::resize_during_interactive_move_propagates_to_floating ... ok
+niri> test tests::floating::interactive_move_restores_floating_size_when_set_to_floating ... ok
+niri> test tests::floating::moving_to_floating_doesnt_cancel_resize ... ok
+niri> test tests::floating::set_window_height_uses_current_width ... ok
+niri> test tests::floating::resize_to_same_size ... ok
+niri> test tests::floating::set_window_width_uses_current_height ... ok
+niri> test tests::floating::restore_floating_size ... ok
+niri> test tests::floating::unfocus_preserves_current_size ... ok
+niri> test tests::floating::floating_doesnt_store_fullscreen_size ... ok
+niri> test tests::floating::state_change_doesnt_break_use_window_size ... ok
+niri> test tests::window_opening::target_size ... ok
+niri> test tests::floating::resize_to_different_size ... ok
+niri> test utils::scale::tests::guess_monitor_scale_unknown_size ... ok
+niri> test ui::hotkey_overlay::tests::test_format_bind ... ok
+niri> test utils::scale::tests::test_guess_monitor_scale ... ok
+niri> test utils::tests::test_clamp_preferring_top_left ... ok
+niri> test utils::scale::tests::test_round_scale ... ok
+niri> test tests::floating::resize_to_different_then_same ... ok
+niri> test tests::fullscreen::windowed_fullscreen ... ok
+niri> test tests::layer_shell::simple_top_anchor ... ok
+niri> test tests::floating::unfullscreen_to_floating_doesnt_send_extra_configure ... ok
+niri> test tests::layer_shell::margin_overflow ... ok
+niri> test tests::fullscreen::windowed_fullscreen_chain ... ok
+niri> test tests::window_opening::dont_ack_initial_configure ... ok
+niri> test tests::transactions::column_resize_waits_for_both_windows ... ok
+niri> test tests::window_opening::simple ... ok
+niri> test tests::window_opening::simple_no_workspaces ... ok
+niri> test utils::watcher::tests::change_file ... ok
+niri> test utils::watcher::tests::create_dir_and_file ... ok
+niri> test utils::watcher::tests::change_file_in_linked_dir ... ok
+niri> test utils::watcher::tests::change_linked_file ... ok
+niri> test utils::watcher::tests::create_file ... ok
+niri> test utils::watcher::tests::overwrite_but_dont_change_file ... ok
+niri> test utils::watcher::tests::recreate_file ... ok
+niri> test utils::watcher::tests::remove_dir ... ok
+niri> test utils::watcher::tests::recreate_dir ... ok
+niri> test utils::watcher::tests::remove_file ... ok
+niri> test utils::watcher::tests::swap_dir ... ok
+niri> test utils::watcher::tests::swap_dir_link ... ok
+niri> test utils::watcher::tests::swap_just_link ... ok
+niri> test utils::watcher::tests::touch_file ... ok
+niri> test layout::tests::operations_dont_panic ... ok
+niri> test utils::watcher::tests::swap_many_regular ... ok
+niri> test utils::watcher::tests::swap_many_links_regular_like_nix ... ok
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "types/mousekeys" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'mousekeys'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "complete"
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "keycodes/aliases" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "rules/evdev" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'aliases(qwerty)'
+niri> xkbcommon: ERROR: Abandoning keycodes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_keycodes
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-595] Cannot load XKB rules "evdev"
+niri> xkbcommon: ERROR: [XKB-822] Couldn't look up rules 'evdev', model 'pc105', layout 'us', variant '(null)', options '(null)'
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "types/level5" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: xkbcommon: ERROR: [XKB-338] Couldn't find file "types/pc" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> [XKB-338] Couldn't find file "rules/evdev" in include paths
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'level5'
+niri> xkbcommon: ERROR: xkbcommon: ERROR: [XKB-338]     /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'pc'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "complete"
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-595] Cannot load XKB rules "evdev"
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "complete"
+niri> xkbcommon: ERROR: [XKB-822] Couldn't look up rules 'evdev', model 'pc105', layout 'us', variant '(null)', options '(null)'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/ledcaps" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'ledcaps'
+niri> xkbcommon: ERROR: Abandoning compatibility map "basic"
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: xkbcommon: ERROR: [XKB-338] Couldn't find file "types/complete" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'complete'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "types/complete" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'complete'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "keycodes/aliases" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'aliases(qwerty)'
+niri> xkbcommon: ERROR: Abandoning keycodes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_keycodes
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/accessx" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'accessx(full)'
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/caps" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'caps(caps_lock)'
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/misc" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'misc(assign_shift_right_action)'
+niri> xkbcommon: ERROR: Abandoning compatibility map "misc"
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/ledscroll" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'ledscroll'
+niri> xkbcommon: ERROR: Abandoning compatibility map "misc"
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/misc" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'misc'
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/basic" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'basic'
+niri> xkbcommon: ERROR: Abandoning compatibility map "complete"
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "compat/complete" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'complete'
+niri> xkbcommon: ERROR: Abandoning compatibility map "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_compatibility
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "symbols/pc" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'pc'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning symbols file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_symbols
+niri> xkbcommon: ERROR: xkbcommon: ERROR: [XKB-338] Couldn't find file "types/numpad" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: xkbcommon: ERROR: [XKB-338] Couldn't find file "types/iso9995" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR:
+niri> thread '<unnamed>' (15010) panicked at src/tests/window_opening.rs:403:5:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+niri> 
+niri> thread '<unnamed>' (15007) panicked at src/tests/window_opening.rs:403:5:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15010) panicked at src/tests/fixture.rs:102:65:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15023) panicked at src/tests/window_opening.rs:403:5:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15007) panicked at src/niri.rs:2456:18:
+niri> called `Result::unwrap()` on an `Err` value: BadKeymap
+niri> 
+niri> thread '<unnamed>' (15013) panicked at src/tests/server.rs:16:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15006) panicked at src/tests/window_opening.rs:403:5:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15021) panicked at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:325:13:
+niri> [wayland-backend-sys] libwayland reported an allocation failure.
+niri> 
+niri> thread '<unnamed>' (15021) panicked at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:325:13:
+niri> [wayland-backend-sys] libwayland reported an allocation failure.
+niri> 
+niri> thread '<unnamed>' (15019) panicked at src/tests/fixture.rs:36:65:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15019) panicked at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:325:13:
+niri> [wayland-backend-sys] libwayland reported an allocation failure.
+niri> 
+niri> thread '<unnamed>' (15020) panicked at src/tests/client.rs:162:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15020) panicked at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:325:13:
+niri> [wayland-backend-sys] libwayland reported an allocation failure.
+niri> 
+niri> thread '<unnamed>' (15015) panicked at /cargo-vendor-dir/calloop-0.14.3/src/sources/channel.rs:163:38:
+niri> Failed to create a Ping.: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15008) panicked at src/tests/fixture.rs:102:65:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15009) panicked at src/tests/window_opening.rs:403:5:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15008) panicked at src/tests/server.rs:16:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15018) panicked at src/tests/fixture.rs:102:65:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15015) panicked at src/tests/fixture.rs:92:49:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15023) panicked at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:325:13:
+niri> [wayland-backend-sys] libwayland reported an allocation failure.
+niri> 
+niri> thread '<unnamed>' (15019) panicked at src/niri.rs:2305:66:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15007) panicked at src/tests/fixture.rs:92:49:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15015) panicked at src/niri.rs:2456:18:
+niri> called `Result::unwrap()` on an `Err` value: BadKeymap
+niri> 
+niri> thread '<unnamed>' (15019) panicked at src/tests/client.rs:162:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15017) panicked at src/tests/fixture.rs:102:65:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15010) panicked at src/tests/client.rs:162:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15021) panicked at src/tests/client.rs:162:47:
+niri> called `Result::unwrap()` on an `Err` value: IoError(Os { code: 24, kind: Uncategorized, message: "Too many open files" })
+niri> 
+niri> thread '<unnamed>' (15009) panicked at src/utils/transaction.rs:113:46:
+niri> called `Result::unwrap()` on an `Err` value: Os { code: 24, kind: Uncategorized, message: "Too many open files" }
+niri> 
+niri> thread '<unnamed>' (15009) panicked at library/core/src/panicking.rs:230:5:
+niri> panic in a function that cannot unwind
+niri> stack backtrace:
+niri> [XKB-661] Couldn't process include statement for 'iso9995'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "complete"
+niri> [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'numpad'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "complete"
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-769] Abandoning keytypes file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_types
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "symbols/keypad" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'keypad(operators)'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning symbols file "x11"
+niri> xkbcommon: ERROR: [XKB-769] Abandoning symbols file "pc105"
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "symbols/us" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-661] Couldn't process include statement for 'us'
+niri> xkbcommon: ERROR: [XKB-769] Abandoning symbols file "(unnamed map)"
+niri> xkbcommon: ERROR: Failed to compile xkb_symbols
+niri> xkbcommon: ERROR: [XKB-822] Failed to compile keymap
+niri> xkbcommon: ERROR: [XKB-338] Couldn't find file "rules/evdev" in include paths
+niri> xkbcommon: ERROR: [XKB-338] 1 include paths searched:
+niri> xkbcommon: ERROR: [XKB-338]       /nix/store/ndd2cy7nzalasnjrdyz48c90wg9fjzig-xkeyboard-config-2.46/etc/X11/xkb
+niri> xkbcommon: ERROR: [XKB-338] 3 include paths could not be added:
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.config/xkb
+niri> xkbcommon: ERROR: [XKB-338]       /homeless-shelter/.xkb
+niri> xkbcommon: ERROR: [XKB-338]       /etc/xkb
+niri> xkbcommon: ERROR: [XKB-595] Cannot load XKB rules "evdev"
+niri> xkbcommon: ERROR: [XKB-822] Couldn't look up rules 'evdev', model 'pc105', layout 'us', variant '(null)', options '(null)'
+niri>    0:     0x55555630097c - <std::sys::backtrace::BacktraceLock::print::DisplayBacktrace as core::fmt::Display>::fmt::h7204adf1c6fdef2b
+niri>    1:     0x55555575c4ff - core::fmt::write::h3d00f283bc304fde
+niri>    2:     0x5555562ee8cf - std::io::default_write_fmt::he21fecdc87fab05d
+niri>    3:     0x5555562f9473 - std::sys::backtrace::BacktraceLock::print::h2f81cabc952f2da1
+niri>    4:     0x555556307f77 - std::panicking::default_hook::{{closure}}::h6811c05ca8247929
+niri>    5:     0x555556307e57 - std::panicking::default_hook::hf366cc83e545a716
+niri>    6:     0x555556347dd5 - test::test_main_with_exit_callback::{{closure}}::hb242e59d8bb1a118
+niri>    7:     0x55555630816b - std::panicking::panic_with_hook::h9ea074a53b4fce1f
+niri>    8:     0x5555562f96a6 - std::panicking::panic_handler::{{closure}}::hf295b94ad9f5b1fe
+niri>    9:     0x5555562f9589 - std::sys::backtrace::__rust_end_short_backtrace::h16141967bfc5ce64
+niri>   10:     0x5555563031ad - __rustc[efec867641465232]::rust_begin_unwind
+niri>   11:     0x55555569460d - core::panicking::panic_nounwind_fmt::hea735a7210a0df50
+niri>   12:     0x555555694552 - core::panicking::panic_nounwind::h2e0c83fa72eec922
+niri>   13:     0x555555694767 - core::panicking::panic_cannot_unwind::ha412d3c320e4fed6
+niri>   14:     0x555555e9e42d - resource_dispatcher<niri::niri::State>
+niri>                                at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:1445:1
+niri>   15:     0x7ffff4d8fc72 - <unknown>
+niri>   16:     0x7ffff4d89cab - <unknown>
+niri>   17:     0x7ffff4d8d252 - <unknown>
+niri>   18:     0x555555bb2238 - {closure#0}<niri::niri::State>
+niri>                                at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:410:13
+niri>   19:     0x555555bb2238 - set<(alloc::sync::Arc<std::sync::poison::mutex::Mutex<(dyn wayland_backend::sys::server_impl::ErasedState + core::marker::Send)>, alloc::alloc::Global>, *mut core::ffi::c_void), wayland_backend::sys::server_impl::{impl#21}::dispatch_all_clients::{closure_env#0}<niri::niri::State>, i32>
+niri>                                at /cargo-vendor-dir/scoped-tls-1.0.1/src/lib.rs:137:9
+niri>   20:     0x555555e9f596 - dispatch_all_clients<niri::niri::State>
+niri>                                at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/server_impl/mod.rs:407:26
+niri>   21:     0x555555aa635d - dispatch_all_clients<niri::niri::State>
+niri>                                at /cargo-vendor-dir/wayland-backend-0.3.11/src/sys/../server_api.rs:579:22
+niri>   22:     0x555555aa635d - dispatch_clients<niri::niri::State>
+niri>                                at /cargo-vendor-dir/wayland-server-0.31.10/src/display.rs:59:22
+niri>   23:     0x555555aa635d - {closure#10}
+niri>                                at ./src/niri.rs:2540:39
+niri>   24:     0x555555aa635d - {closure#0}<niri::niri::State, calloop::sources::generic::Generic<wayland_server::display::Display<niri::niri::State>, std::io::error::Error>, niri::niri::{impl#5}::new::{closure_env#10}>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/mod.rs:327:61
+niri>   25:     0x555555aa635d - process_events<wayland_server::display::Display<niri::niri::State>, std::io::error::Error, calloop::sources::{impl#4}::process_events::{closure_env#0}<niri::niri::State, calloop::sources::generic::Generic<wayland_server::display::Display<niri::niri::State>, std::io::error::Error>, niri::niri::{impl#5}::new::{closure_env#10}>>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/generic.rs:290:9
+niri>   26:     0x555555aa635d - process_events<niri::niri::State, calloop::sources::generic::Generic<wayland_server::display::Display<niri::niri::State>, std::io::error::Error>, niri::niri::{impl#5}::new::{closure_env#10}>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/mod.rs:327:14
+niri>   27:     0x555555adc3ed - dispatch_events<niri::niri::State>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/loop_logic.rs:527:36
+niri>   28:     0x555555adc3ed - dispatch<niri::niri::State, core::time::Duration>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/loop_logic.rs:632:14
+niri>   29:     0x555555f3561d - dispatch
+niri>                                at ./src/tests/server.rs:35:14
+niri>   30:     0x555555f3561d - {closure#0}
+niri>                                at ./src/tests/fixture.rs:40:30
+niri>   31:     0x555555f3561d - {closure#0}<niri::tests::fixture::State, calloop::sources::generic::Generic<std::os::fd::owned::OwnedFd, std::io::error::Error>, niri::tests::fixture::{impl#0}::with_config::{closure_env#0}>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/mod.rs:327:61
+niri>   32:     0x555555f3561d - process_events<std::os::fd::owned::OwnedFd, std::io::error::Error, calloop::sources::{impl#4}::process_events::{closure_env#0}<niri::tests::fixture::State, calloop::sources::generic::Generic<std::os::fd::owned::OwnedFd, std::io::error::Error>, niri::tests::fixture::{impl#0}::with_config::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/generic.rs:290:9
+niri>   33:     0x555555aa661d - process_events<niri::tests::fixture::State, calloop::sources::generic::Generic<std::os::fd::owned::OwnedFd, std::io::error::Error>, niri::tests::fixture::{impl#0}::with_config::{closure_env#0}>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/sources/mod.rs:327:14
+niri>   34:     0x555555adfbcd - dispatch_events<niri::tests::fixture::State>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/loop_logic.rs:527:36
+niri>   35:     0x555555adfbcd - dispatch<niri::tests::fixture::State, core::time::Duration>
+niri>                                at /cargo-vendor-dir/calloop-0.14.3/src/loop_logic.rs:632:14
+niri>   36:     0x5555558c0502 - dispatch
+niri>                                at ./src/tests/fixture.rs:59:14
+niri>   37:     0x5555558c0502 - roundtrip
+niri>                                at ./src/tests/fixture.rs:124:18
+niri>   38:     0x555555ee5926 - double_roundtrip
+niri>                                at ./src/tests/fixture.rs:138:14
+niri>   39:     0x555555ee5926 - check_target_output_and_workspace
+niri>                                at ./src/tests/window_opening.rs:347:11
+niri>   40:     0x555555ee5926 - {closure#0}
+niri>                                at ./src/tests/window_opening.rs:200:9
+niri>   41:     0x555555ee5926 - call_mut<((core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)), niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>
+niri>                                at /rustc-1.92.0-src/library/core/src/ops/function.rs:274:22
+niri>   42:     0x555555b6a88c - {closure#0}<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>), &niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>
+niri>                                at /rustc-1.92.0-src/library/core/src/iter/traits/iterator.rs:825:29
+niri>   43:     0x555555b6a88c - fold<rayon::vec::SliceDrain<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, (), core::iter::traits::iterator::Iterator::for_each::call::{closure_env#0}<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>), &niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /rustc-1.92.0-src/library/core/src/iter/traits/iterator.rs:2603:21
+niri>   44:     0x555555b6a88c - for_each<rayon::vec::SliceDrain<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, &niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>
+niri>                                at /rustc-1.92.0-src/library/core/src/iter/traits/iterator.rs:828:14
+niri>   45:     0x555555b6a88c - consume_iter<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}, (core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>), rayon::vec::SliceDrain<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/for_each.rs:55:26
+niri>   46:     0x555555b6a88c - fold_with<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:107:16
+niri>   47:     0x555555b6a88c - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:432:22
+niri>   48:     0x555555b4b7ae - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>   49:     0x555555b4b7ae - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>   50:     0x555555b4b7ae - run_inline<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:102:9
+niri>   51:     0x555555b4b7ae - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:165:38
+niri>   52:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>   53:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>   54:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>   55:     0x555555b4b633 - {closure#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:412:21
+niri>   56:     0x555555b4b633 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:124:17
+niri>   57:     0x555555b4b633 - call_once<(), rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>   58:     0x555555b4b633 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>   59:     0x555555b4b633 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>   60:     0x555555b4b633 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>   61:     0x555555b4b633 - halt_unwinding<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>   62:     0x555555b4b633 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:142:24
+niri>   63:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>   64:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>   65:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>   66:     0x555555b4b633 - {closure#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:412:21
+niri>   67:     0x555555b4b633 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:124:17
+niri>   68:     0x555555b4b633 - call_once<(), rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>   69:     0x555555b4b633 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>   70:     0x555555b4b633 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>   71:     0x555555b4b633 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>   72:     0x555555b4b633 - halt_unwinding<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>   73:     0x555555b4b633 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:142:24
+niri>   74:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>   75:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>   76:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>   77:     0x555555b927d9 - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>   78:     0x555555b927d9 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>   79:     0x555555b927d9 - {closure#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:41
+niri>   80:     0x555555b927d9 - call_once<(), rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>   81:     0x555555b927d9 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>   82:     0x555555b927d9 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>   83:     0x555555b927d9 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>   84:     0x555555b927d9 - halt_unwinding<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>   85:     0x555555b927d9 - call<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:15
+niri>   86:     0x555555b927d9 - execute<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:120:32
+niri>   87:     0x5555556c6aaa - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:64:9
+niri>   88:     0x5555556c6aaa - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:866:13
+niri>   89:     0x5555556c6aaa - wait_until_cold
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:792:22
+niri>   90:     0x5555556c735b - wait_until<rayon_core::latch::SpinLatch>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:775:18
+niri>   91:     0x5555556c735b - join_recover_from_panic
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:184:19
+niri>   92:     0x555555b4b8b7 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:145:25
+niri>   93:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>   94:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>   95:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>   96:     0x555555b4b633 - {closure#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:412:21
+niri>   97:     0x555555b4b633 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:124:17
+niri>   98:     0x555555b4b633 - call_once<(), rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>   99:     0x555555b4b633 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  100:     0x555555b4b633 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  101:     0x555555b4b633 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  102:     0x555555b4b633 - halt_unwinding<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  103:     0x555555b4b633 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:142:24
+niri>  104:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  105:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  106:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  107:     0x555555b4b633 - {closure#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:412:21
+niri>  108:     0x555555b4b633 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:124:17
+niri>  109:     0x555555b4b633 - call_once<(), rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  110:     0x555555b4b633 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  111:     0x555555b4b633 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  112:     0x555555b4b633 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  113:     0x555555b4b633 - halt_unwinding<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  114:     0x555555b4b633 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:142:24
+niri>  115:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  116:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  117:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  118:     0x555555b927d9 - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>  119:     0x555555b927d9 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>  120:     0x555555b927d9 - {closure#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:41
+niri>  121:     0x555555b927d9 - call_once<(), rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  122:     0x555555b927d9 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  123:     0x555555b927d9 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  124:     0x555555b927d9 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  125:     0x555555b927d9 - halt_unwinding<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  126:     0x555555b927d9 - call<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:15
+niri>  127:     0x555555b927d9 - execute<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:120:32
+niri>  128:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:64:9
+niri>  129:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:866:13
+niri>  130:     0x5555556c6e2e - wait_until_cold
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:800:26
+niri>  131:     0x555555b4b82f - wait_until<rayon_core::latch::SpinLatch>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:775:18
+niri>  132:     0x555555b4b82f - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:157:31
+niri>  133:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  134:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  135:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  136:     0x555555b927d9 - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>  137:     0x555555b927d9 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>  138:     0x555555b927d9 - {closure#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:41
+niri>  139:     0x555555b927d9 - call_once<(), rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  140:     0x555555b927d9 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  141:     0x555555b927d9 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  142:     0x555555b927d9 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  143:     0x555555b927d9 - halt_unwinding<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  144:     0x555555b927d9 - call<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:15
+niri>  145:     0x555555b927d9 - execute<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:120:32
+niri>  146:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:64:9
+niri>  147:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:866:13
+niri>  148:     0x5555556c6e2e - wait_until_cold
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:800:26
+niri>  149:     0x555555b4b82f - wait_until<rayon_core::latch::SpinLatch>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:775:18
+niri>  150:     0x555555b4b82f - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:157:31
+niri>  151:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  152:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  153:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  154:     0x555555b4b633 - {closure#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:412:21
+niri>  155:     0x555555b4b633 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:124:17
+niri>  156:     0x555555b4b633 - call_once<(), rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  157:     0x555555b4b633 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  158:     0x555555b4b633 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  159:     0x555555b4b633 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  160:     0x555555b4b633 - halt_unwinding<rayon_core::join::join_context::call_a::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  161:     0x555555b4b633 - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:142:24
+niri>  162:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  163:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  164:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  165:     0x555555b927d9 - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>  166:     0x555555b927d9 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>  167:     0x555555b927d9 - {closure#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:41
+niri>  168:     0x555555b927d9 - call_once<(), rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  169:     0x555555b927d9 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  170:     0x555555b927d9 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  171:     0x555555b927d9 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  172:     0x555555b927d9 - halt_unwinding<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  173:     0x555555b927d9 - call<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:15
+niri>  174:     0x555555b927d9 - execute<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:120:32
+niri>  175:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:64:9
+niri>  176:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:866:13
+niri>  177:     0x5555556c6e2e - wait_until_cold
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:800:26
+niri>  178:     0x555555b4b82f - wait_until<rayon_core::latch::SpinLatch>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:775:18
+niri>  179:     0x555555b4b82f - {closure#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:157:31
+niri>  180:     0x555555b6a990 - in_worker<rayon_core::join::join_context::{closure_env#0}<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>, ((), ())>
+niri>  181:     0x555555b6a990 - join_context<rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#0}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>, (), ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:132:5
+niri>  182:     0x555555b6a990 - helper<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:410:47
+niri>  183:     0x555555b927d9 - {closure#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>
+niri>                                at /cargo-vendor-dir/rayon-1.11.0/src/iter/plumbing/mod.rs:421:21
+niri>  184:     0x555555b927d9 - {closure#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/join/mod.rs:129:25
+niri>  185:     0x555555b927d9 - {closure#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:41
+niri>  186:     0x555555b927d9 - call_once<(), rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  187:     0x555555b927d9 - do_call<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  188:     0x555555b927d9 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  189:     0x555555b927d9 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  190:     0x555555b927d9 - halt_unwinding<rayon_core::job::{impl#9}::call::{closure_env#0}<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/unwind.rs:17:5
+niri>  191:     0x555555b927d9 - call<(), rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:218:15
+niri>  192:     0x555555b927d9 - execute<rayon_core::latch::SpinLatch, rayon_core::join::join_context::call_b::{closure_env#0}<(), rayon::iter::plumbing::bridge_producer_consumer::helper::{closure_env#1}<rayon::vec::DrainProducer<(core::option::Option<&str>, core::option::Option<&str>, core::option::Option<&str>, niri::tests::window_opening::WantFullscreen, core::option::Option<niri::tests::window_opening::SetParent>)>, rayon::iter::for_each::ForEachConsumer<niri::tests::window_opening::target_output_and_workspaces::{closure_env#0}>>>, ()>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:120:32
+niri>  193:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/job.rs:64:9
+niri>  194:     0x5555556c6e2e - execute
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:866:13
+niri>  195:     0x5555556c6e2e - wait_until_cold
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:800:26
+niri>  196:     0x5555560e1064 - wait_until<rayon_core::latch::OnceLatch>
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:775:18
+niri>  197:     0x5555560e1064 - wait_until_out_of_work
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:824:14
+niri>  198:     0x5555560e1064 - main_loop
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:929:19
+niri>  199:     0x5555560e1064 - run
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:50:18
+niri>  200:     0x5555560e519a - {closure#0}
+niri>                                at /cargo-vendor-dir/rayon-core-1.13.0/src/registry.rs:95:27
+niri>  201:     0x5555560e519a - __rust_begin_short_backtrace<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/sys/backtrace.rs:158:18
+niri>  202:     0x5555560e6881 - {closure#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/thread/mod.rs:562:17
+niri>  203:     0x5555560e6881 - call_once<(), std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>
+niri>                                at /rustc-1.92.0-src/library/core/src/panic/unwind_safe.rs:274:9
+niri>  204:     0x5555560e6881 - do_call<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:590:40
+niri>  205:     0x5555560e6881 - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>>
+niri>                                at /rustc-1.92.0-src/library/std/src/panicking.rs:553:19
+niri>  206:     0x5555560e6881 - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/panic.rs:359:14
+niri>  207:     0x5555560e6881 - {closure#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+niri>                                at /rustc-1.92.0-src/library/std/src/thread/mod.rs:560:30
+niri>  208:     0x5555560e6881 - call_once<std::thread::{impl#0}::spawn_unchecked_::{closure_env#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>, ()>
+niri>                                at /rustc-1.92.0-src/library/core/src/ops/function.rs:250:5
+niri>  209:     0x5555562da627 - std::sys::thread::unix::Thread::new::thread_start::h51b5b8f8e50739ea
+niri>  210:     0x7ffff749dd53 - <unknown>
+niri>  211:     0x7ffff75255fc - <unknown>
+niri>  212:                0x0 - <unknown>
+niri> thread caused non-unwinding panic. aborting.
+niri> error: test failed, to rerun pass `--lib`
+niri> 
+niri> Caused by:
+niri>   process didn't exit successfully: `/build/source/target/x86_64-unknown-linux-gnu/release/deps/niri-71737be40d1528ec '--skip=::egl'` (signal: 6, SIGABRT: process abort signal)
+error: Cannot build '/nix/store/c4jzhq5nrprg6m5705scmvdhw8hrqiyv-niri-25.08.drv'.
+       Reason: builder failed with exit code 101.
+       Output paths:
+         /nix/store/h5c9cg51mj6bq9a6qrlssrw9zal76bdm-niri-25.08-doc
+         /nix/store/ki7m9qg0044bg2g0cz2kxp3crf562632-niri-25.08
+error: Cannot build '/nix/store/5jc08p5spr7vlsmh0ksylacpay19wqk6-config.kdl.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/bh09vrlmd1kssgrd5lqws6df11am4q96-config.kdl
+error: Cannot build '/nix/store/422bc45190w6ll5zsgm4s3q2wd98fnby-home-manager-files.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/wbfd42rafq25q3gwh0vdcjhxzl2wfpyc-home-manager-files
+error: Cannot build '/nix/store/vxbis21hasxag92p8iii22wwhr0yrl22-home-manager-generation.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/8rxsipvw00q4b8phln066qriwqwnppsg-home-manager-generation
+error: Cannot build '/nix/store/5nmj6jn6drhkr4askf963m1gkdng4g3b-unit-home-manager-omfgzell.service.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/w2xgh4lmndhq5p7d06ggcw5zqbfd8mqf-unit-home-manager-omfgzell.service
+error: Cannot build '/nix/store/8g2kfcnyry6634ay5j50zb2kd8vpyw68-system-units.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/ksyh01932mv1gbm6a5c81yxk8v3j0npn-system-units
+error: Cannot build '/nix/store/xnc4wmk543fbrmgqaqdimc69f2yyjw76-etc.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/l8lq7pcssvs28cc9kkj5pd3qg55hychj-etc
+error: Cannot build '/nix/store/amsz0g69wrxpsp6w1h235ll6197l9lbr-nixos-system-nixos-26.05.20260213.a82ccc3.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/1mcndap3pisddi0ra5p181n72gpiqrhv-nixos-system-nixos-26.05.20260213.a82ccc3
+Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '.#nixosConfigurations."nixos".config.system.build.toplevel' --no-link --print-build-logs --show-trace' returned non-zero exit status 1.

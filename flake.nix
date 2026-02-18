@@ -32,6 +32,7 @@
   };
 
   outputs = {
+self,
     nixpkgs,
     home-manager,
     nixvim,
@@ -41,10 +42,11 @@
     zen-browser,
     rNvim,
     ...
-  }: {
+  } @ inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = { inherit inputs; }; 
         modules = [
           ./configuration.nix
           home-manager.nixosModules.home-manager
@@ -54,7 +56,7 @@
             home-manager.users.omfgzell = ./home.nix;
             home-manager.sharedModules = [
               nixvim.homeModules.nixvim
-              niri.homeModules.niri
+             # niri.homeModules.niri
               noctalia.homeModules.default
               plasma-manager.homeModules.plasma-manager
               zen-browser.homeModules.default
