@@ -216,10 +216,10 @@
         "Switch Window Right" = "Meta+L";
         "Switch Window Up" = "Meta+K";
       };
-      defaultApplications = {
-        "browser" = "zen-beta";
-        "terminal" = "kitty";
-      };
+    };
+    defaultApplications = {
+      "browser" = "zen-beta";
+      "terminal" = "kitty";
     };
     hotkeys.commands = {
       "launch-kitty" = {
