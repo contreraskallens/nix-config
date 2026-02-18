@@ -39,152 +39,152 @@
           "Media"
         ];
       };
-      windowRules = [
-        {
-          description = "Browsers in space 1";
-          match = {
-            windowClass = {
-              value = "zen-beta";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 1;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Browsers in space 1";
-          match = {
-            windowClass = {
-              value = "firefox";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 1;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Terminal in space 2";
-          match = {
-            windowclass = {
-              value = "kitty";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 2;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Thunderbird in space 3";
-          match = {
-            windowclass = {
-              value = "thunderbird";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 3;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Ferdium in space 3";
-          match = {
-            windowclass = {
-              value = "ferdium";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 3;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Open Spotify on Desktop 5";
-          match = {
-            windowClass = {
-              value = "spotify";
-              type = "substring";
-            };
-          };
-          apply = {
-            desktop = {
-              value = 5;
-              type = "force";
-            };
-          };
-        }
-        {
-          description = "Default to 4";
-          match = {
-            window-class = {
-              value = ".*";
-              type = "regex";
-            };
-          };
-          apply = {
-            desktops = {
-              value = 4; # Force to show everywhere
-              apply = "initially"; # "initially" lets you move it later; "force" locks it
-            };
-          };
-        }
-        {
-          description = "Terminals maximized";
-          match = {
-            window-class = {
-              value = "kitty";
-              type = "regex";
-            };
-          };
-          apply = {
-            maximizehoriz = {
-              value = true;
-              apply = "initially";
-            };
-            maximizevert = {
-              value = true;
-              apply = "initially";
-            };
-          };
-        }
-        {
-          description = "Browsers maximized";
-          match = {
-            window-class = {
-              value = "firefox|zen-beta";
-              type = "regex";
-            };
-          };
-          apply = {
-            maximizehoriz = {
-              value = true;
-              apply = "initially";
-            };
-            maximizevert = {
-              value = true;
-              apply = "initially";
-            };
-          };
-        }
-      ];
     };
+    window-rules = [
+      {
+        description = "Browsers in space 1";
+        match = {
+          windowClass = {
+            value = "zen-beta";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 1;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Browsers in space 1";
+        match = {
+          windowClass = {
+            value = "firefox";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 1;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Terminal in space 2";
+        match = {
+          windowclass = {
+            value = "kitty";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 2;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Thunderbird in space 3";
+        match = {
+          windowclass = {
+            value = "thunderbird";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 3;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Ferdium in space 3";
+        match = {
+          windowclass = {
+            value = "ferdium";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 3;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Open Spotify on Desktop 5";
+        match = {
+          windowClass = {
+            value = "spotify";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktop = {
+            value = 5;
+            type = "force";
+          };
+        };
+      }
+      {
+        description = "Default to 4";
+        match = {
+          window-class = {
+            value = ".*";
+            type = "regex";
+          };
+        };
+        apply = {
+          desktops = {
+            value = 4; # Force to show everywhere
+            apply = "initially"; # "initially" lets you move it later; "force" locks it
+          };
+        };
+      }
+      {
+        description = "Terminals maximized";
+        match = {
+          window-class = {
+            value = "kitty";
+            type = "regex";
+          };
+        };
+        apply = {
+          maximizehoriz = {
+            value = true;
+            apply = "initially";
+          };
+          maximizevert = {
+            value = true;
+            apply = "initially";
+          };
+        };
+      }
+      {
+        description = "Browsers maximized";
+        match = {
+          window-class = {
+            value = "firefox|zen-beta";
+            type = "regex";
+          };
+        };
+        apply = {
+          maximizehoriz = {
+            value = true;
+            apply = "initially";
+          };
+          maximizevert = {
+            value = true;
+            apply = "initially";
+          };
+        };
+      }
+    ];
     shortcuts.kwin = {
       "Window Close" = "Meta+Q";
       "Window Quick Tile Left" = "Meta+Left";
