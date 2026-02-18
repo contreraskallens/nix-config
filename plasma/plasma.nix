@@ -52,6 +52,7 @@
         apply = {
           desktop = {
             value = "Browser";
+            apply = "initially";
           };
         };
       }
@@ -66,6 +67,7 @@
         apply = {
           desktop = {
             value = "Browser";
+            apply = "initially";
           };
         };
       }
@@ -80,6 +82,7 @@
         apply = {
           desktop = {
             value = "Dev";
+            apply = "initially";
           };
         };
       }
@@ -94,6 +97,7 @@
         apply = {
           desktop = {
             value = "Comms";
+            apply = "initially";
           };
         };
       }
@@ -108,6 +112,7 @@
         apply = {
           desktop = {
             value = "Comms";
+            apply = "initially";
           };
         };
       }
@@ -122,6 +127,7 @@
         apply = {
           desktop = {
             value = "Media";
+            apply = "initially";
           };
         };
       }
@@ -134,7 +140,7 @@
           };
         };
         apply = {
-          desktops = {
+          desktop = {
             value = "General";
             apply = "initially";
           };
@@ -179,49 +185,58 @@
         };
       }
     ];
-    shortcuts.kwin = {
-      "Window Close" = "Meta+Q";
-      "Window Quick Tile Left" = "Meta+Left";
-      "Window Quick Tile Right" = "Meta+Right";
-      "Window Maximize" = "Meta+Up";
-      "Window Fullscreen" = "Meta+F";
+    shortcuts = {
+      kwin = {
+        "Window Close" = "Meta+Q";
+        "Window Quick Tile Left" = "Meta+Left";
+        "Window Quick Tile Right" = "Meta+Right";
+        "Window Maximize" = "Meta+Up";
+        "Window Fullscreen" = "Meta+F";
 
-      "Switch to Desktop 1" = "Meta+1";
-      "Switch to Desktop 2" = "Meta+2";
-      "Switch to Desktop 3" = "Meta+3";
-      "Switch to Desktop 4" = "Meta+4";
-      "Switch to Desktop 5" = "Meta+5";
-      "Window to Desktop 1" = "Meta+Shift+1";
-      "Window to Desktop 2" = "Meta+Shift+2";
-      "Window to Desktop 3" = "Meta+Shift+3";
-      "Window to Desktop 4" = "Meta+Shift+4";
-      "Window to Desktop 5" = "Meta+Shift+5";
-      "ExposeAll" = "Meta+O";
-      "Switch Window Down" = "Meta+J";
-      "Switch Window Left" = "Meta+H";
-      "Switch Window Right" = "Meta+L";
-      "Switch Window Up" = "Meta+K";
-    };
-    shortcuts.defaultApplications = {
-      "browser" = "zen.beta";
-      "terminal" = "kitty";
-    };
-    hotkeys.commands = {
-      "launch-kitty" = {
-        key = "Meta+Return";
-        command = "kitty";
+        "Switch to Desktop 1" = "Meta+1";
+        "Switch to Desktop 2" = "Meta+2";
+        "Switch to Desktop 3" = "Meta+3";
+        "Switch to Desktop 4" = "Meta+4";
+        "Switch to Desktop 5" = "Meta+5";
+        "Window to Desktop 1" = "Meta+Shift+1";
+        "Window to Desktop 2" = "Meta+Shift+2";
+        "Window to Desktop 3" = "Meta+Shift+3";
+        "Window to Desktop 4" = "Meta+Shift+4";
+        "Window to Desktop 5" = "Meta+Shift+5";
+        "ExposeAll" = "Meta+O";
+        "Switch Window Down" = "Meta+J";
+        "Switch Window Left" = "Meta+H";
+        "Switch Window Right" = "Meta+L";
+        "Switch Window Up" = "Meta+K";
       };
-      "launch-browser" = {
-        key = "Meta+Z";
-        command = "zen-beta";
+      shortcuts.defaultApplications = {
+        "browser" = "zen.beta";
+        "terminal" = "kitty";
       };
-      "launch-file" = {
-        key = "Meta+E";
-        command = "dolphin";
+      hotkeys.commands = {
+        "launch-kitty" = {
+          key = "Meta+Return";
+          command = "kitty";
+        };
+        "launch-browser" = {
+          key = "Meta+Z";
+          command = "zen-beta";
+        };
+        "launch-file" = {
+          key = "Meta+E";
+          command = "dolphin";
+        };
+        "launch-launcher" = {
+          key = "Meta+Space";
+          command = "rofi -show combi -modes combi -combi-modes window,drun";
+        };
       };
-      "launch-launcher" = {
-        key = "Meta+Space";
-        command = "rofi -show combi -modes combi -combi-modes window,drun";
+      plasmashell = {
+        "activate task manager entry 1" = "none";
+        "activate task manager entry 2" = "none";
+        "activate task manager entry 3" = "none";
+        "activate task manager entry 4" = "none";
+        "activate task manager entry 5" = "none";
       };
     };
   };
