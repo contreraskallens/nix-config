@@ -97,7 +97,6 @@
     extraGroups = ["networkmanager" "wheel" "docker"];
   };
 
-  programs.yazi.enable = true;
   programs.niri = {
     enable = true;
     package = pkgs.niri;
@@ -108,6 +107,8 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/home/omfgzell/nix-config";
   };
+  programs.steam.enable = true;
+  programs.yazi.enable = true;
   services.gnome.gnome-keyring.enable = true;
   xdg.portal = {
     enable = true;

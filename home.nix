@@ -52,7 +52,6 @@
     gnome-disk-utility
     libreoffice
     spotify
-    steam
     taskwarrior3
     thunderbird
     vorta
@@ -144,7 +143,5 @@
 
   # Firefox
   programs.firefox.enable = true;
-  # Steam
-  programs.steam.enable = true;
   home.stateVersion = "25.11";
 }
