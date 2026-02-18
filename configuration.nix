@@ -96,7 +96,10 @@ inputs.niri.nixosModules.niri
   };
 
   programs.yazi.enable = true;
-  programs.niri.enable = true;
+  programs.niri = {
+enable = true;
+package = pkgs.niri;
+};
   programs.nh = {
     enable = true;
     clean.enable = true;
