@@ -51,7 +51,7 @@
         };
         apply = {
           desktop = {
-            value = 1;
+            value = "Browser";
           };
         };
       }
@@ -65,7 +65,7 @@
         };
         apply = {
           desktop = {
-            value = 1;
+            value = "Browser";
           };
         };
       }
@@ -79,7 +79,7 @@
         };
         apply = {
           desktop = {
-            value = 2;
+            value = "Dev";
           };
         };
       }
@@ -93,7 +93,7 @@
         };
         apply = {
           desktop = {
-            value = 3;
+            value = "Comms";
           };
         };
       }
@@ -107,7 +107,7 @@
         };
         apply = {
           desktop = {
-            value = 3;
+            value = "Comms";
           };
         };
       }
@@ -121,7 +121,7 @@
         };
         apply = {
           desktop = {
-            value = 5;
+            value = "Media";
           };
         };
       }
@@ -135,7 +135,7 @@
         };
         apply = {
           desktops = {
-            value = 4;
+            value = "General";
             apply = "initially";
           };
         };
