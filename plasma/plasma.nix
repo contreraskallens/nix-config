@@ -209,34 +209,34 @@
         "Switch Window Right" = "Meta+L";
         "Switch Window Up" = "Meta+K";
       };
-      shortcuts.defaultApplications = {
-        "browser" = "zen.beta";
-        "terminal" = "kitty";
-      };
-      hotkeys.commands = {
-        "launch-kitty" = {
-          key = "Meta+Return";
-          command = "kitty";
-        };
-        "launch-browser" = {
-          key = "Meta+Z";
-          command = "zen-beta";
-        };
-        "launch-file" = {
-          key = "Meta+E";
-          command = "dolphin";
-        };
-        "launch-launcher" = {
-          key = "Meta+Space";
-          command = "rofi -show combi -modes combi -combi-modes window,drun";
-        };
-      };
       plasmashell = {
         "activate task manager entry 1" = "none";
         "activate task manager entry 2" = "none";
         "activate task manager entry 3" = "none";
         "activate task manager entry 4" = "none";
         "activate task manager entry 5" = "none";
+      };
+    };
+    defaultApplications = {
+      "browser" = "zen.beta";
+      "terminal" = "kitty";
+    };
+    hotkeys.commands = {
+      "launch-kitty" = {
+        key = "Meta+Return";
+        command = "kitty";
+      };
+      "launch-browser" = {
+        key = "Meta+Z";
+        command = "zen-beta";
+      };
+      "launch-file" = {
+        key = "Meta+E";
+        command = "dolphin";
+      };
+      "launch-launcher" = {
+        key = "Meta+Space";
+        command = "rofi -show combi -modes combi -combi-modes window,drun";
       };
     };
   };
