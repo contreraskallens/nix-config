@@ -44,7 +44,7 @@
       {
         description = "Browsers in space 1";
         match = {
-          windowClass = {
+          window-class = {
             value = "zen-beta";
             type = "substring";
           };
@@ -59,7 +59,7 @@
       {
         description = "Browsers in space 1";
         match = {
-          windowClass = {
+          window-class = {
             value = "firefox";
             type = "substring";
           };
@@ -74,7 +74,7 @@
       {
         description = "Terminal in space 2";
         match = {
-          windowclass = {
+          window-class = {
             value = "kitty";
             type = "substring";
           };
@@ -89,7 +89,7 @@
       {
         description = "Thunderbird in space 3";
         match = {
-          windowclass = {
+          window-class = {
             value = "thunderbird";
             type = "substring";
           };
@@ -104,7 +104,7 @@
       {
         description = "Ferdium in space 3";
         match = {
-          windowclass = {
+          window-class = {
             value = "ferdium";
             type = "substring";
           };
@@ -119,7 +119,7 @@
       {
         description = "Open Spotify on Desktop 5";
         match = {
-          windowClass = {
+          window-class = {
             value = "spotify";
             type = "substring";
           };
