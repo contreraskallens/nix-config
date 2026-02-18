@@ -66,7 +66,7 @@
         };
         apply = {
           desktop = {
-            value = 1;
+            value = "1";
             apply = "initially";
           };
         };
@@ -81,7 +81,7 @@
         };
         apply = {
           desktop = {
-            value = 2;
+            value = "Dev";
             apply = "initially";
           };
         };
@@ -217,10 +217,6 @@
         "Switch Window Up" = "Meta+K";
       };
     };
-    defaultApplications = {
-      "browser" = "zen-beta";
-      "terminal" = "kitty";
-    };
     hotkeys.commands = {
       "launch-kitty" = {
         key = "Meta+Return";
@@ -238,6 +234,10 @@
         key = "Meta+Space";
         command = "rofi -show combi -modes combi -combi-modes window,drun";
       };
+    };
+    configFile.kdeglobals.General = {
+      TerminalApplication = "kitty";
+      TerminalService = "kitty.desktop";
     };
   };
 }
