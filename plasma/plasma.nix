@@ -51,7 +51,7 @@
         };
         apply = {
           desktop = {
-            value = 1;
+            value = "Desktop_1";
             apply = "initially";
           };
         };
@@ -66,7 +66,7 @@
         };
         apply = {
           desktop = {
-            value = "1";
+            value = "Desktop_1";
             apply = "initially";
           };
         };
