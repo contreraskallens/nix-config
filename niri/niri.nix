@@ -65,6 +65,8 @@
       {command = ["wl-paste" "--type" "text" "--watch" "cliphist" "store"];}
       {command = ["wl-paste" "--type" "image" "--watch" "cliphist" "store"];}
       {command = ["udiskie"];}
+      # Focus on misc instead of browser
+      {command = ["niri" "msg" "action" "focus-workspace" "4"];}
     ];
     environment = {
       XDG_CURRENT_DESKTOP = "niri";
@@ -79,6 +81,8 @@
       "browser" = {};
       "dev" = {};
       "comms".open-on-output = "eDP-1";
+      "misc" = {};
+      "media" = {};
     };
 
     window-rules = [
@@ -92,28 +96,32 @@
         open-floating = true;
       }
       {
-        matches = [{app-id = "Bitwarden";} {app-id = "thunar";}];
+        matches = [{app-id = "Bitwarden";} {app-id = "Dolphin";}];
         default-column-width.proportion = 0.75;
         default-window-height.proportion = 0.75;
       }
       {
-        matches = [{app-id = "kitty";} {app-id = "zen_browser";} {app-id = "firefox";}];
+        matches = [{app-id = "kitty";} {app-id = "zen-beta";} {app-id = "firefox";}];
         open-maximized = true;
         # default-column-width.proportion = 1.0;
       }
       {
-        matches = [{app-id = "zen_browser";}];
+        matches = [{app-id = "zen-beta";} {app-id = "Firefox";}];
         open-on-workspace = "browser";
       }
       {
         matches = [{app-id = "kitty";}];
         open-on-workspace = "dev";
       }
-
       {
-        matches = [{app-id = "eu.betterbird.Betterbird";} {app-id = "Ferdium";}];
+        matches = [{app-id = "Thunderbird";} {app-id = "Ferdium";}];
         open-on-workspace = "comms";
       }
+      {
+        matches = [{app-id = "Spotify";}];
+        open-on-workspace = "comms";
+      }
+      {open-on-workspace = "misc";}
       {
         matches = [{app-id = "Microsoft Word";}];
         open-floating = true;

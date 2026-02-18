@@ -13,7 +13,10 @@
   #   delete_generations = "+5"; # Option added by nix-gc-env
   # };
 
-  # Bootloader.
+  # Bootloader
+  boot.loader.limine.enable = true;
+  boot.loader.grub.enable = false;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -96,9 +99,9 @@
 
   programs.yazi.enable = true;
   programs.niri = {
-enable = true;
-package = pkgs.niri;
-};
+    enable = true;
+    package = pkgs.niri;
+  };
   programs.nh = {
     enable = true;
     clean.enable = true;

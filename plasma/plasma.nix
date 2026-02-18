@@ -1,71 +1,190 @@
 {...}: {
   programs.plasma = {
     enable = true;
-    kwin = {
-      virtualDesktops.number = 4;
-    };
     workspace = {
       clickItemTo = "select";
       lookAndFeel = "org.kde.breezedark.desktop";
       cursor.theme = "Bibata-Modern-Ice";
     };
     panels = [
-      # Windows-like panel at the bottom
       {
         location = "bottom";
         widgets = [
           "org.kde.plasma.kickoff"
           "org.kde.plasma.icontasks"
           "org.kde.plasma.marginsseparator"
-          "org.kde.plasma.pager"
+          {
+            name = "org.kde.plasma.pager";
+            config = {
+              General = {
+                showApplicationIcons = true;
+                currentDesktopSelected = 1;
+                displayedText = 2;
+              };
+            };
+          }
           "org.kde.plasma.systemtray"
           "org.kde.plasma.digitalclock"
         ];
       }
     ];
-    window-rules = [
-      # Terminals maximized
-      {
-        description = "Terminals maximized";
-        match = {
-          window-class = {
-            value = "kitty";
-            type = "regex";
+    kwin = {
+      virtualDesktops = {
+        number = 5;
+        names = [
+          "Browser"
+          "Dev"
+          "Comms"
+          "General"
+          "Media"
+        ];
+      };
+      windowRules = [
+        {
+          description = "Browsers in space 1";
+          match = {
+            windowClass = {
+              value = "zen-beta";
+              type = "substring";
+            };
           };
-        };
-        apply = {
-          maximizehoriz = {
-            value = true;
-            apply = "initially";
+          apply = {
+            desktop = {
+              value = 1;
+              type = "force";
+            };
           };
-          maximizevert = {
-            value = true;
-            apply = "initially";
+        }
+        {
+          description = "Browsers in space 1";
+          match = {
+            windowClass = {
+              value = "firefox";
+              type = "substring";
+            };
           };
-        };
-      }
-      # Browsers maximized
-      {
-        description = "Browsers maximized";
-        match = {
-          window-class = {
-            value = "firefox|zen-beta";
-            type = "regex";
+          apply = {
+            desktop = {
+              value = 1;
+              type = "force";
+            };
           };
-        };
-        apply = {
-          maximizehoriz = {
-            value = true;
-            apply = "initially";
+        }
+        {
+          description = "Terminal in space 2";
+          match = {
+            windowclass = {
+              value = "kitty";
+              type = "substring";
+            };
           };
-          maximizevert = {
-            value = true;
-            apply = "initially";
+          apply = {
+            desktop = {
+              value = 2;
+              type = "force";
+            };
           };
-        };
-      }
-    ];
-
+        }
+        {
+          description = "Thunderbird in space 3";
+          match = {
+            windowclass = {
+              value = "thunderbird";
+              type = "substring";
+            };
+          };
+          apply = {
+            desktop = {
+              value = 3;
+              type = "force";
+            };
+          };
+        }
+        {
+          description = "Ferdium in space 3";
+          match = {
+            windowclass = {
+              value = "ferdium";
+              type = "substring";
+            };
+          };
+          apply = {
+            desktop = {
+              value = 3;
+              type = "force";
+            };
+          };
+        }
+        {
+          description = "Open Spotify on Desktop 5";
+          match = {
+            windowClass = {
+              value = "spotify";
+              type = "substring";
+            };
+          };
+          apply = {
+            desktop = {
+              value = 5;
+              type = "force";
+            };
+          };
+        }
+        {
+          description = "Default to 4";
+          match = {
+            window-class = {
+              value = ".*";
+              type = "regex";
+            };
+          };
+          apply = {
+            desktops = {
+              value = 4; # Force to show everywhere
+              apply = "initially"; # "initially" lets you move it later; "force" locks it
+            };
+          };
+        }
+        {
+          description = "Terminals maximized";
+          match = {
+            window-class = {
+              value = "kitty";
+              type = "regex";
+            };
+          };
+          apply = {
+            maximizehoriz = {
+              value = true;
+              apply = "initially";
+            };
+            maximizevert = {
+              value = true;
+              apply = "initially";
+            };
+          };
+        }
+        {
+          description = "Browsers maximized";
+          match = {
+            window-class = {
+              value = "firefox|zen-beta";
+              type = "regex";
+            };
+          };
+          apply = {
+            maximizehoriz = {
+              value = true;
+              apply = "initially";
+            };
+            maximizevert = {
+              value = true;
+              apply = "initially";
+            };
+          };
+        }
+      ];
+    };
     shortcuts.kwin = {
       "Window Close" = "Meta+Q";
       "Window Quick Tile Left" = "Meta+Left";
@@ -77,17 +196,22 @@
       "Switch to Desktop 2" = "Meta+2";
       "Switch to Desktop 3" = "Meta+3";
       "Switch to Desktop 4" = "Meta+4";
+      "Switch to Desktop 5" = "Meta+5";
       "Window to Desktop 1" = "Meta+Shift+1";
       "Window to Desktop 2" = "Meta+Shift+2";
       "Window to Desktop 3" = "Meta+Shift+3";
       "Window to Desktop 4" = "Meta+Shift+4";
-      "Expose" = "Meta+O";
+      "Window to Desktop 5" = "Meta+Shift+5";
+      "ExposeAll" = "Meta+O";
       "Switch Window Down" = "Meta+J";
       "Switch Window Left" = "Meta+H";
       "Switch Window Right" = "Meta+L";
       "Switch Window Up" = "Meta+K";
     };
-
+    shortcuts.defaultApplications = {
+      "browser" = "zen.beta";
+      "terminal" = "kitty";
+    };
     hotkeys.commands = {
       "launch-kitty" = {
         key = "Meta+Return";

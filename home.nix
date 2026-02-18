@@ -119,9 +119,9 @@
   };
 
   programs.zen-browser = {
-	enable = true;
-	suppressXdgMigrationWarning = true;
-};
+    enable = true;
+    suppressXdgMigrationWarning = true;
+  };
   # Starship
   programs.starship = {
     enable = true;
@@ -143,5 +143,7 @@
 
   # Firefox
   programs.firefox.enable = true;
+  # Steam
+  programs.steam.enable = true;
   home.stateVersion = "25.11";
 }
