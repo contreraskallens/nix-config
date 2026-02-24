@@ -54,7 +54,10 @@
     spotify
     taskwarrior3
     thunderbird
-    vivaldi
+    (vivaldi.override {
+      proprietaryCodecs = true;
+      # enableWidevine = true; # Optional: enable Widevine (DRM) support
+    })
     vorta
     winboat
     zathura
