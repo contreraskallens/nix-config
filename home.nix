@@ -54,6 +54,7 @@
     spotify
     taskwarrior3
     thunderbird
+    vivaldi
     vorta
     winboat
     zathura
