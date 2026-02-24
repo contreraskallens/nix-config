@@ -60,6 +60,22 @@
         description = "Browsers in space 1";
         match = {
           window-class = {
+            value = "vivaldi";
+            type = "substring";
+          };
+        };
+        apply = {
+          desktops = {
+            value = "Desktop_1";
+            apply = "initially";
+          };
+        };
+      }
+
+      {
+        description = "Browsers in space 1";
+        match = {
+          window-class = {
             value = "firefox";
             type = "substring";
           };
