@@ -51,6 +51,7 @@
     ferdium
     gnome-disk-utility
     libreoffice
+    onlyoffice-desktopeditors
     spotify
     taskwarrior3
     thunderbird
