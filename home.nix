@@ -151,7 +151,7 @@
 
   programs.vicinae = {
     enable = true;
-    autoStart = true;
+    settings.autoStart = true;
   };
 
   # Firefox
