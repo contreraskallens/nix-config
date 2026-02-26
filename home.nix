@@ -54,7 +54,6 @@
     spotify
     taskwarrior3
     thunderbird
-    vicinae
     # (vivaldi.override {
     #   proprietaryCodecs = true;
     #   # enableWidevine = true; # Optional: enable Widevine (DRM) support
@@ -148,10 +147,15 @@
       matching = "fuzzy";
     };
   };
-
-  programs.vicinae = {
-    enable = true;
-    settings.autoStart = true;
+  services.vicinae = {
+    enable = true; # default: false
+    systemd = {
+      enable = true; # default: false
+      autoStart = true; # default: false
+      environment = {
+        USE_LAYER_SHELL = 1;
+      };
+    };
   };
 
   # Firefox

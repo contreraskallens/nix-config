@@ -33,6 +33,7 @@
       url = "github:R-nvim/R.nvim";
       flake = false;
     };
+    vicinae.url = "github:vicinaehq/vicinae";
   };
 
   outputs = {
@@ -45,6 +46,7 @@
     plasma-manager,
     zen-browser,
     rNvim,
+    vicinae,
     ...
   }: {
     nixosConfigurations = {
@@ -64,6 +66,7 @@
               noctalia.homeModules.default
               plasma-manager.homeModules.plasma-manager
               zen-browser.homeModules.default
+              vicinae.homeManagerModules.default
             ];
             home-manager.extraSpecialArgs = {inherit rNvim;};
           }
