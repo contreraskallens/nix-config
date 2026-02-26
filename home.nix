@@ -65,7 +65,7 @@
     zotero
 
     # Helium browser from NUR
-    nur.repos.lonerOrz.helium
+    nur.repos.Ev357.helium
 
     # Fonts
     nerd-fonts.fira-code
