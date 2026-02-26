@@ -1,5 +1,34 @@
 {...}: {
   programs.niri.settings = {
+    outputs = {
+      "eDP-1" = {
+        enable = true;
+        mode = {
+          height = 1800;
+          width = 2880;
+          refresh = 120.0;
+        };
+        scale = 1.5;
+        position = {
+          x = 0;
+          y = 0;
+        };
+      };
+      "HDMI-A-1" = {
+        enable = true;
+        mode = {
+          height = 2560;
+          width = 1440;
+          refresh = 60.0;
+        };
+        scale = 1.25;
+        position = {
+          x = 1920;
+          y = 0;
+        };
+      };
+    };
+
     input = {
       keyboard.xkb = {
         layout = "us";
@@ -86,17 +115,18 @@
     };
 
     window-rules = [
+      {open-on-workspace = "misc";}
       {
         matches = [{app-id = "^gnome-control-center$";} {app-id = "^nm-connection-editor$";}];
         default-column-width.proportion = 0.5;
         open-floating = true;
       }
       {
-        matches = [{app-id = "^gnome-calculator$";} {app-id = "^galculator$";} {app-id = "pavucontrol";} {app-id = "^blueman-manager$";} {app-id = "^xdg-desktop-portal$";} {app-id = "Bitwarden";} {app-id = "thunar";}];
+        matches = [{app-id = "^gnome-calculator$";} {app-id = "^galculator$";} {app-id = "pavucontrol";} {app-id = "^blueman-manager$";} {app-id = "^xdg-desktop-portal$";} {app-id = "Bitwarden";} {app-id = "dolphin";}];
         open-floating = true;
       }
       {
-        matches = [{app-id = "Bitwarden";} {app-id = "Dolphin";}];
+        matches = [{app-id = "Bitwarden";} {app-id = "dolphin";}];
         default-column-width.proportion = 0.75;
         default-window-height.proportion = 0.75;
       }
@@ -106,7 +136,7 @@
         # default-column-width.proportion = 1.0;
       }
       {
-        matches = [{app-id = "zen-beta";} {app-id = "Firefox";}];
+        matches = [{app-id = "zen-beta";} {app-id = "firefox";}];
         open-on-workspace = "browser";
       }
       {
@@ -114,14 +144,13 @@
         open-on-workspace = "dev";
       }
       {
-        matches = [{app-id = "Thunderbird";} {app-id = "Ferdium";}];
+        matches = [{app-id = "thunderbird";} {app-id = "ferdium";}];
         open-on-workspace = "comms";
       }
       {
         matches = [{app-id = "Spotify";}];
-        open-on-workspace = "comms";
+        open-on-workspace = "media";
       }
-      {open-on-workspace = "misc";}
       {
         matches = [{app-id = "Microsoft Word";}];
         open-floating = true;
@@ -159,7 +188,7 @@
       "Mod+Shift+V".action.switch-focus-between-floating-and-tiling = {};
       "Mod+W".action.toggle-column-tabbed-display = {};
       "Mod+E".action.spawn = "nemo";
-      "Mod+B".action.spawn = "firefox";
+      "Mod+Z".action.spawn = "zen-beta";
 
       "Mod+Left".action.focus-column-left = {};
       "Mod+Down".action.focus-window-down = {};
