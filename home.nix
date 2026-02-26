@@ -54,14 +54,18 @@
     spotify
     taskwarrior3
     thunderbird
-    (vivaldi.override {
-      proprietaryCodecs = true;
-      # enableWidevine = true; # Optional: enable Widevine (DRM) support
-    })
+    vicinae
+    # (vivaldi.override {
+    #   proprietaryCodecs = true;
+    #   # enableWidevine = true; # Optional: enable Widevine (DRM) support
+    # })
     vorta
     winboat
     zathura
     zotero
+
+    # Helium browser from NUR
+    nur.repos.lonerOrz.helium
 
     # Fonts
     nerd-fonts.fira-code
@@ -143,6 +147,12 @@
       sorting-method = "fzf";
       matching = "fuzzy";
     };
+  };
+
+  services.vicinae = {
+    enable = true;
+    package = pkgs.vicinae;
+    autoStart = true;
   };
 
   # Firefox
