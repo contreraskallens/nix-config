@@ -149,10 +149,10 @@
     };
   };
   services.vicinae = {
-    enable = true; # default: false
+    enable = true;
     systemd = {
-      enable = true; # default: false
-      autoStart = true; # default: false
+      enable = true;
+      autoStart = true;
       environment = {
         USE_LAYER_SHELL = 1;
       };
