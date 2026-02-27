@@ -50,15 +50,10 @@
     bitwarden-desktop
     ferdium
     gnome-disk-utility
-    libreoffice
     onlyoffice-desktopeditors
     spotify
     taskwarrior3
     thunderbird
-    # (vivaldi.override {
-    #   proprietaryCodecs = true;
-    #   # enableWidevine = true; # Optional: enable Widevine (DRM) support
-    # })
     vorta
     winboat
     zathura
@@ -137,17 +132,17 @@
   };
   xdg.configFile."starship.toml".source = ./dotfiles/starship.toml;
 
-  # Rofi
-  programs.rofi = {
-    enable = true;
-    terminal = "kitty";
-    extraConfig = {
-      show-icons = true;
-      sort = true;
-      sorting-method = "fzf";
-      matching = "fuzzy";
-    };
-  };
+  # # Rofi
+  # programs.rofi = {
+  #   enable = true;
+  #   terminal = "kitty";
+  #   extraConfig = {
+  #     show-icons = true;
+  #     sort = true;
+  #     sorting-method = "fzf";
+  #     matching = "fuzzy";
+  #   };
+  # };
   services.vicinae = {
     enable = true;
     systemd = {
