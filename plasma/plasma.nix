@@ -248,7 +248,8 @@
       };
       "launch-launcher" = {
         key = "Meta+Space";
-        command = "rofi -show combi -modes combi -combi-modes window,drun";
+        command = "vicinae toggle";
+        # command = "rofi -show combi -modes combi -combi-modes window,drun";
       };
     };
     configFile.kdeglobals.General = {

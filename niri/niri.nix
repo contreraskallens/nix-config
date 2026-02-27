@@ -175,7 +175,8 @@
       };
       "Mod+Space" = {
         hotkey-overlay.title = "Application Launcher";
-        action.spawn = ["rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "window,drun"];
+        action.spawn = ["vicinae" "toggle"];
+        # action.spawn = ["rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "window,drun"];
       };
 
       "Mod+Q" = {
