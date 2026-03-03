@@ -16,7 +16,6 @@
   home.packages = with pkgs; [
     # Languages
     R
-    rPackages.jsonlite
     go
     julia
     rustup
@@ -54,6 +53,7 @@
     filen-desktop
     gnome-disk-utility
     onlyoffice-desktopeditors
+    rstudio
     spotify
     taskwarrior3
     thunderbird
@@ -101,6 +101,7 @@
     enable = true;
     interactiveShellInit = ''
       set -gx EDITOR 'nvim'
+      direnv hook fish | source
     '';
   };
   # Kitty config

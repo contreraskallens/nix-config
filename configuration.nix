@@ -116,6 +116,8 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
   environment.systemPackages = with pkgs; [
     # Utils
+    direnv
+    nix-direnv
     vim
     wget
     # Compression
