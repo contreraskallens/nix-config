@@ -112,12 +112,13 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
+  hardware.logitech.wireless.enable = true;
   nix.settings.experimental-features = ["nix-command" "flakes"];
   environment.systemPackages = with pkgs; [
     # Utils
     direnv
     nix-direnv
+    solaar
     vim
     wget
     # Compression

@@ -41,7 +41,6 @@
     lazygit
     mako
     rclone
-    solaar
     udiskie
     uv
     wl-clipboard
