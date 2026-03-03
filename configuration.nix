@@ -117,10 +117,13 @@
   environment.systemPackages = with pkgs; [
     # Utils
     direnv
+    kdePackages.kio-gdrive
+    kdePackages.kio-extras
     nix-direnv
     vim
     wget
     # Compression
+    bzip3
     xz
     unzip
     zip

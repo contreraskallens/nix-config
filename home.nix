@@ -38,8 +38,6 @@
     difftastic
     eza
     fzf
-    kdePackages.kio-gdrive
-    kdePackages.kio-extras
     lazygit
     mako
     udiskie
