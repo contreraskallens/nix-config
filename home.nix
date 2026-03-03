@@ -167,7 +167,7 @@
     Install.WantedBy = ["default.target"];
     Service = {
       ExecStartPre = "/run/current-system/sw/bin/mkdir -p %h/google_drive";
-      ExecStart = "${pkgs.rclone}/bin/rclone mount gdrive: %h/google_drive --vfs-cache-mode writes --rc-web-gui --rc-no-auth";
+      ExecStart = "${pkgs.rclone}/bin/rclone mount gdrive: %h/google_drive --vfs-cache-mode writes --rc --rc-web-gui --rc-no-auth";
       ExecStop = "/run/wrappers/bin/fusermount -u %h/google_drive";
       Restart = "on-failure";
       RestartSec = 5;
