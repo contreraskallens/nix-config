@@ -117,6 +117,8 @@
   environment.systemPackages = with pkgs; [
     # Utils
     direnv
+    kdePackages.kaccounts-integration
+    kdePackages.kaccounts-providers
     kdePackages.kio-gdrive
     kdePackages.kio-extras
     nix-direnv
