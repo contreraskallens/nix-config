@@ -89,7 +89,6 @@
     description = "Pablo Contreras";
     extraGroups = ["networkmanager" "wheel" "docker"];
   };
-
   programs.niri = {
     enable = true;
     package = pkgs.niri;

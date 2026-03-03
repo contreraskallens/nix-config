@@ -48,7 +48,10 @@
 
     # Programs
     bitwarden-desktop
+    drive
+    dropbox
     ferdium
+    filen-desktop
     gnome-disk-utility
     onlyoffice-desktopeditors
     spotify
