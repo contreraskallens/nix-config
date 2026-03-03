@@ -40,6 +40,7 @@
     fzf
     lazygit
     mako
+    rclone
     udiskie
     uv
     wl-clipboard
