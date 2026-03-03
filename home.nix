@@ -39,7 +39,7 @@
     eza
     fzf
     kdePackages.kio-gdrive
-    kio-extras
+    kdePackages.kio-extras
     lazygit
     mako
     udiskie
