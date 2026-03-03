@@ -38,6 +38,8 @@
     difftastic
     eza
     fzf
+    kdePackages.kio-gdrive
+    kio-extras
     lazygit
     mako
     udiskie
@@ -48,7 +50,6 @@
     # Programs
     bitwarden-desktop
     drive
-    dropbox
     ferdium
     filen-desktop
     gnome-disk-utility
