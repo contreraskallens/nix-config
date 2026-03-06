@@ -148,21 +148,6 @@
         };
       }
       {
-        description = "Default to 4";
-        match = {
-          window-class = {
-            value = ".*";
-            type = "regex";
-          };
-        };
-        apply = {
-          desktops = {
-            value = "Desktop_4";
-            apply = "initially";
-          };
-        };
-      }
-      {
         description = "Terminals maximized";
         match = {
           window-class = {
@@ -249,7 +234,6 @@
       "launch-launcher" = {
         key = "Meta+Space";
         command = "vicinae toggle";
-        # command = "rofi -show combi -modes combi -combi-modes window,drun";
       };
     };
     configFile.kdeglobals.General = {

@@ -123,9 +123,6 @@
     wget
     # Compression
     bzip3
-    xz
-    unzip
-    zip
     p7zip
     # Devel
     clang_multi
